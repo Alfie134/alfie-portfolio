@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavBar } from '../nav-bar/nav-bar';
 import { CreativityComponent } from '../creativity/creativity';
 
 @Component({
