@@ -5,7 +5,7 @@ import { CreativityComponent } from '../creativity/creativity';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CreativityComponent],
+  imports: [NavBar],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })

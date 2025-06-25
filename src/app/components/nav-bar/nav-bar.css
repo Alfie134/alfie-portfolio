@@ -42,7 +42,7 @@
     text-shadow: #eff0ab;
     background: #ffcc80b3;
     border-radius: 20px;
-    transform: translateY(-2px);
+    transform: translateY(-2px); /*Movement of botton when hover*/
 }
 
 .topNavBar a::after{

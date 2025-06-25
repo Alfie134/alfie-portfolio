@@ -18,14 +18,14 @@ app-nav-bar{
 }
 
 -------------------------------------------------------------
-.intro-text{
+.content-container{
     text-align: center;
     padding: 1.5rem;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.intro-text h1{
+.content-container h1{
     color: #3a1c1c; 
     font-size: 2.5rem;
     font-family: "Playfair Display, serif";
@@ -34,37 +34,8 @@ app-nav-bar{
     text-align: center;
 }
 
-.intro-text p{
+.content-container p{
     font-size: 1.5rem;
     color: #5a2b2b;
     margin: 2rem;
-}
-
-
--------------------------------------------------------------
-/*.cta-group{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    margin-top: 2rem;
-}*/
-
-.cta-btn{
-    display: inline-block;
-    width: fit-content;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 10px;
-    background-color: #3a1c1c;
-    color: white;
-    text-align: center;
-    transition: background-color 0.3s, transform 0.2s ease;
-}
-
-.cta-btn:hover{
-background-color: #ebb6bf;
-color: 000;
-transform: scale(1.05);
 }
