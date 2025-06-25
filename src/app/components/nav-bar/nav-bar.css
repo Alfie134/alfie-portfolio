@@ -5,10 +5,14 @@
 
 /* Theme of navigation  bar? */
 .topNavBar{
+    position:  fixed;
+    top: 1rem;
+    left: 0;
+    width: 100%;
+    margin-top: 1;
     background: linear-gradient(to bttom right, #8ba6f0 #9855b8);
     box-shadow: 0 4px 15px #2b4fb1;
     border-bottom:  2px solid #7a2c9e;
-    padding: 0;
     border-radius: 35px;
     font-family: 'Cinzel', serif, 'Times New Roman', Times, serif;
 }
@@ -16,9 +20,11 @@
 .topNavBar ul{
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    gap: 2rem;
 }
 
 .topNavBar li{
