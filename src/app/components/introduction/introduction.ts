@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { NavBar } from '../nav-bar/nav-bar';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-introduction',
   standalone: true,
   imports: [NavBar],
-  templateUrl: './home.html',
-  styleUrl: './home.css'
+  templateUrl: './introduction.html',
+  styleUrl: './introduction.css'
 })
-export class HomeComponent {
+export class IntroductionComponent {
 
 }

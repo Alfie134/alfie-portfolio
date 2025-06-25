@@ -1,6 +1,6 @@
-.welcome-wrapper {
-    height: 100vh;
-    background: linear-gradient(to bottom right, #b5d7e7, #ffcad4);
+.introduction-wrapper{
+height: 100vh;
+    background: linear-gradient(to bottom left, #f5d591, #e99bc2 );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,17 +9,14 @@
 }
 
 -------------------------------------------------------------
-
--------------------------------------------------------------
-.content-container{
-    text-align: center;
-    padding: 1.5rem;
-    max-width: 800px;
-    margin: 0 auto;
+.content-container {
+    position: relative;
+    z-index: 1;
+    padding: 8px 16px;
 }
 
-.content-container h1{
-    color: #3a1c1c; 
+.content-container h1 {
+    color: #3a1c1c;
     font-size: 2.5rem;
     font-family: "Playfair Display, serif";
     font-weight: bold;
@@ -27,7 +24,7 @@
     text-align: center;
 }
 
-.content-container p{
+.content-container p {
     font-size: 1.5rem;
     color: #5a2b2b;
     margin: 2rem;

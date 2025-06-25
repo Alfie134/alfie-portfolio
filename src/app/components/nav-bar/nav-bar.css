@@ -1,5 +1,9 @@
-/* Theme of navigation  bar? */
+:host {
+    display: block;
+    margin: 15px 20px;
+}
 
+/* Theme of navigation  bar? */
 .topNavBar{
     background: linear-gradient(to bttom right, #8ba6f0 #9855b8);
     box-shadow: 0 4px 15px #2b4fb1;
