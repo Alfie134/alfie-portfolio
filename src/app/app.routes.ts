@@ -5,6 +5,7 @@ import { CreativityComponent } from './components/creativity/creativity';
 import { ProjectsComponent } from './components/projects/projects';
 
 export const routes: Routes = [
+    {path: '', component: HomeComponent},
     {path: 'home', component: HomeComponent},
     {path: 'creativity', component:CreativityComponent},
     {path: 'introduction', component:IntroductionComponent},

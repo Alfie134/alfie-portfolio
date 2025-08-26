@@ -1,1 +1,19 @@
-<p>projects works!</p>
+<section>
+    ><h2>Semester Project</h2>
+    <p style="text-align: center; max-width: 700px; margin: auto;">
+        Our 4th semester project is about creating a digital platform for smaller
+        riding schools to host and manage events. My role focuses on frontend design and cyber security integration. 
+    </p>
+
+    <h3>Progress Timeline</h3>
+    <div class="timeline">
+        <div *ngFor="let step of timeline">
+            <strong>{{step.week}}:</strong> {{step.desc}}
+        </div>
+    </div>
+    
+    <div class="updates">
+        <h3>What I'm learning right now</h3>
+        <div class="update-item" *ngFor="let update of updates">{{ update }}</div>    
+    </div>
+</section>
