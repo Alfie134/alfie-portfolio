@@ -13,7 +13,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white text-gray-900">
         <Header/>
-        <WaveDivider color="#3b82f6" height={120} variant="soft"></WaveDivider>
+        <WaveDivider color="#e9c5f0ff" height={130} variant="soft"></WaveDivider>
         <main>{children}</main>
         <Footer/>
       </body>
