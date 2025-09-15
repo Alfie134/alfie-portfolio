@@ -44,40 +44,37 @@ export default function ProgressPage() {
                 </motion.p>
 
             {/*Dropdown Section*/}
-            <div className="max-w-3xl mx-auto space-y-4 my-16">
+            <div className=" mt-12 max-w-3xl w-full space-y-4 text-left">
                 {weeks.map((week, index) => (
-                    <div key={index} className="border rounded-lg shadow-sm bg-white overflow-hidden">
-                        <button
-                            onClick={() =>
-                                setOpenIndex(openIndex === index ? null : index)
-                            }
-                            className="w-full flex justify-between items-center p-4 font-semibold 
-                                hover:bg-gray-100 transition-colors duration-200">
-                                    {week.label}
-                                    <motion.span
-                                        animate={{ rotate: openIndex === index ? 180 : 0 }}
-                                        transition={{duration: 0.3, ease: "easeOut"}}
-                                        className="inline-block">
-                                        ▼
-                                    </motion.span>
-                            </button>
+                    <div key={index} className="cursor-pointer">
+                        <h2 
+                            onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                            className="font-bold text-lg sm:text-2xl hover:text[#50250c] transition-colors duration-200">
+                            {week.label}
+                        </h2>
+                        <motion.span
+                            animate={{ rotate: openIndex === index ? 180 : 0 }}
+                            transition={{duration: 0.3, ease: "easeOut"}}
+                            className="inline-block">
+                            ▼
+                        </motion.span>
 
                             <AnimatePresence>
                                 {openIndex === index && (
                                     <motion.div
+                                        className="p-6 border-t text-gray-700 max-h-150 overflow-y-auto"
                                         initial={{ opacity: 0, height: 0 }}
                                         animate={{ opacity: 1, height: "auto" }}
                                         exit={{ opacity: 0, height: 0 }}
                                         transition={{ duration: 0.4, ease: "easeOut" }}
-                                        className="p-4 border-t text-gray-700"
                                         >
                                             {week.content}
                                     </motion.div>
                                 )}
                             </AnimatePresence>
-                        </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }
