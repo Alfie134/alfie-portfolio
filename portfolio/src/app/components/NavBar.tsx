@@ -15,7 +15,7 @@ const NavBar: React.FC<NavBarProps> = ({ color = "#f3f4f6" }) => {
                 <ul className="flex space-x-6">
                     <li><Link href="/"> Home </Link></li>
                     <li><Link href="/about">About Me</Link></li>
-                    <li><Link href="/projects">Semester Progress</Link></li>
+                    <li><Link href="/progress">Semester Progress</Link></li>
                     <li><Link href="/projects">The Project</Link></li>
                     <li><Link href="/contact">Contact Me</Link></li>
                 </ul>

@@ -7,7 +7,7 @@ export default function HomePage() {
     <main>
       {/* Hero Section */ }
       <section className="min-h-screen flex flex-col justify-center items-center 
-                          bg-gradient-to-b from-[#f4d3be] to-[#f9c2e4] text-center">
+                          bg-gradient-to-b from-[#f4d3be] to-[#feddf1] text-center">
 
           <div className="flex flex-col items-center justify-center h-screen -mt-40">
             <div className="w-full text-center">
@@ -26,7 +26,7 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
-                className="text-2xl"
+                className="text-2xl font-semi-bold"
                 style={{ color: "#50250c" }}
                 >
                   This is my portfolio for my 4th semester in my computer science degree 
@@ -47,7 +47,6 @@ export default function HomePage() {
                 We want to create this platform, so different users can get different wishes fulfilled. The riders who participate in these events can create a user, where they can register their personal information, their horses, and their equipment, so all the necessary information is gathered in one place. 
               </motion.p>
             </div>
-            
           </div>
       </section>
     </main>

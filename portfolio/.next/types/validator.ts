@@ -54,6 +54,12 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   handler satisfies AppPageConfig<"/">
 }
 
+// Validate ../../src/app/progress/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/progress/page.js")
+  handler satisfies AppPageConfig<"/progress">
+}
+
 // Validate ../../src/app/projects/page.tsx
 {
   const handler = {} as typeof import("../../src/app/projects/page.js")
