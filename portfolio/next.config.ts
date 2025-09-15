@@ -1,9 +1,6 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
+// ✅ new way
 const nextConfig: NextConfig = {
-  experimental: {
-    appDocumentPreloading: true,
-  },
+  appDir: true,
 };
-
-export default nextConfig;
