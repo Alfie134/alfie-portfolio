@@ -1,14 +1,34 @@
-# dependencies
+# Node dependencies
 /node_modules
 
-# build outputs
+# Next.js build outputs
+/.next
+/out
 /dist
+/dist-ssr
 
-# local env files
+# Local env files
+*.local
 .env
-.env.local
 .env.*.local
 
-# IDE / OS files
-.vscode
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE / OS stuff
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
