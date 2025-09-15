@@ -4,9 +4,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const weeks = [
-    { label: "Week 1 - Intro & Setup", content: "We started with XYZ..." },
-    {label: "Week 2 - First Project", content: "Built the ABC..." },
-    { label: "Week 3 - API Work", content: "Learned how to connect..." },
+    { label: "August 18th – 24th ", content: "We started with XYZ..." },
+    {label: "August 25th – 31st ", content: "Built the ABC..." },
+    { label: "September 8th – 14th", content: "Learned how to connect..." },
+    { label: "September 15th – 21st ", content: ""},
   // Add more weeks here
 ];
 
@@ -18,7 +19,8 @@ export default function ProgressPage() {
         <section className="min-h-screen flex flex-col justify-center items-center 
         bg-gradient-to-b from-[#f4d3be] to-[#feddf1] text-center">
             
-            <div className="flex flex-col items-center justify-center h-screen -mt-40">
+            {/* Hero Section */}
+            <div className="flex flex-col items-center justify-center -mt-40">
                 <motion.h1
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -28,22 +30,36 @@ export default function ProgressPage() {
                 >
                     Our progress during the semester
                 </motion.h1>
-                <div className="max-w-3x1 mx-auto space-y-4">
-                    {weeks.map((week, index) =>(
-                        <div key={index} className="border rounded-lg shaow-sm bg-white owerflow-hidden">
-                            <button
+            </div>
+
+            {/* Description Paragraph */}
+                <motion.p
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.2, ease: "easeOut" }}
+                    className="text-2xl font-bold text-center mb-16"
+                    style={{ color: "#50250c" }}
+                >
+                    The progress of how this semester has unfolded will be divided into the weeks throught the months. 
+                </motion.p>
+
+            {/*Dropdown Section*/}
+            <div className="max-w-3xl mx-auto space-y-4 my-16">
+                {weeks.map((week, index) => (
+                    <div key={index} className="border rounded-lg shadow-sm bg-white overflow-hidden">
+                        <button
                             onClick={() =>
                                 setOpenIndex(openIndex === index ? null : index)
                             }
                             className="w-full flex justify-between items-center p-4 font-semibold 
-                            hover:bg-gray-100 transition-colors duration-200">
-                                {week.label}
-                                <motion.span
-                                    animate={{ rotate: openIndex === index ? 180 : 0 }}
-                                    transition={{duration: 0.3, ease: "easeOut"}}
-                                    className="inline-block">
+                                hover:bg-gray-100 transition-colors duration-200">
+                                    {week.label}
+                                    <motion.span
+                                        animate={{ rotate: openIndex === index ? 180 : 0 }}
+                                        transition={{duration: 0.3, ease: "easeOut"}}
+                                        className="inline-block">
                                         ▼
-                                </motion.span>
+                                    </motion.span>
                             </button>
 
                             <AnimatePresence>
@@ -53,7 +69,8 @@ export default function ProgressPage() {
                                         animate={{ opacity: 1, height: "auto" }}
                                         exit={{ opacity: 0, height: 0 }}
                                         transition={{ duration: 0.4, ease: "easeOut" }}
-                                        className="p-4 border-t text-gray-700">
+                                        className="p-4 border-t text-gray-700"
+                                        >
                                             {week.content}
                                     </motion.div>
                                 )}
@@ -61,25 +78,6 @@ export default function ProgressPage() {
                         </div>
                     ))}
                 </div>
-                <motion.p
-                    initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, ease: "easeOut" }}
-                    className="text-2xl font-bold text-center"
-                    style={{ color: "#50250c" }}
-                >
-                    The progress of how this semester has unfolded will be divided into the weeks throught the months. 
-                </motion.p>
-                <motion.h1
-                    initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, ease: "easeOut" }}
-                    className="text-2xl text-center"
-                    style={{ color: "#50250c" }}
-                >
-                    
-                </motion.h1>
-            </div>
         </section>
     )
 }
