@@ -8,7 +8,7 @@ interface WaveDividerProps {
 }
 
 const WaveDivider: React.FC<WaveDividerProps> = ({
-    color = "#f3f4f6", // default light gray
+    color = "#f3f4f6", // default light grey
     height = 100, // default height
     variant = "soft", //default wave style
     flipped = true,

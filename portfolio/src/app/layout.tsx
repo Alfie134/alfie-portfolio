@@ -1,5 +1,5 @@
 import "./globals.css";
-import Header from "./components/Header";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import WaveDivider from "./components/WaveDivider";
 
@@ -12,10 +12,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-white text-gray-900">
-        <Header/>
-        <WaveDivider color="#3b82f6" height={120} variant="soft"></WaveDivider>
+        <NavBar color="#f1c2a3"></NavBar>
+        <WaveDivider color="#f1c2a3" height={120} variant="soft"></WaveDivider>
         <main>{children}</main>
-        <Footer/>
       </body>
     </html>
   );
