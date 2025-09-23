@@ -7,7 +7,7 @@ export default function HomePage() {
     <main>
       {/* Hero Section */ }
       <section className="min-h-screen flex flex-col justify-center items-center 
-                          bg-gradient-to-b from-[#f4d3be] to-[#feddf1] text-center">
+                          bg-gradient-to-b from-[#333d29] to-[#A4AC86] text-center">
 
           <div className="flex flex-col items-center justify-center -mt-20 space-y-6">
 
@@ -15,7 +15,7 @@ export default function HomePage() {
               <div className="flex flex-col items-center space-y-2">
                 <span className="w-px h-15 bg-[#50250c]"/>
               
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center"
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center"
                   style={{ color: "#50250c" }}>
                 PORTFOLIO
               </h1>

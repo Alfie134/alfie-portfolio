@@ -47,16 +47,15 @@ export default function ProgressPage() {
 
     return (
         <section className="min-h-screen flex flex-col justify-center items-center 
-        bg-gradient-to-b from-[#f4d3be] to-[#feddf1] text-center">
+        bg-gradient-to-b from-[#333d29] to-[#A4AC86] text-center">
             
-            {/* Hero Section */}
             <div className="flex flex-col items-center justify-center -mt-40">
                 <motion.h1
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center"
-                    style={{ color: "#50250c" }}
+                    style={{ color: "#B6AD90" }}
                 >
                     Our progress during the semester
                 </motion.h1>
@@ -68,7 +67,7 @@ export default function ProgressPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="text-2xl font-bold text-center mb-16"
-                    style={{ color: "#50250c" }}
+                    style={{ color: "#B6AD90" }}
                 >
                     The progress of how this semester has unfolded will be divided into the weeks throught the months. 
                 </motion.p>
