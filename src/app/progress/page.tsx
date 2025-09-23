@@ -9,12 +9,12 @@ const weeks = [
             This week we focused on designing and finishing our wireframes for out web application and the app. At this point we do still need to elaborate on them, so they include the different roles the users can have in our application.
             <br/>
             <br/> 
-            The wireframes are created in Miro using it’s AI function, to create the wireframes so they are consistent with each other, and there is a consistency with the design in both our web application, but also our app. 
+            The wireframes are created in Miro using its AI function, to create the wireframes so they are consistent with each other, and there is a consistency with the design in both our web application, but also our app. 
             Styles and general flow of the application is decided now, and we can slowly start to create the different pages in our project. 
             <br/>
             <br/> 
             We have created our Github repository, so now we can slowly begin the development process. 
-            Mathilde and I are looking into React and will today to a LinkedIn Learning course on introduction to React, to get comfortable with the process, and initial beginning of development, and creating the different pages that’s needed for the application.
+            Mathilde and I are looking into React and will today to a LinkedIn Learning course on introduction to React, to get comfortable with the process, and initial beginning of development, and creating the different pages thats needed for the application.
         </p>
     )},
 
@@ -28,12 +28,12 @@ const weeks = [
 
     { label: "September 8th – 14th", content: (
         <p className="text-lg">
-            For this week we’ve had quite a set of goals divided between the different group members. 
+            For this week weve had quite a set of goals divided between the different group members. 
             Mathilde and I, who are specialising in frontend are wanting to study JavaScript further and finish the LinkedIn Learning course
             <a href=" https://www.linkedin.com/learning/javascript-essential-training/javascript-the-soil-from-which-the-modern-web-grows?u=57075649" className="font-bold"> JavaScript Essential Training. </a>
             <br/>
             <br/> 
-            I also want to begin the Use Case Create Horse in our Horse Event project, where I plan on studying the communication between the react frontend and the backend via Api’s,
+            I also want to begin the Use Case Create Horse in our Horse Event project, where I plan on studying the communication between the react frontend and the backend via Apis,
             and begin the implementation of this. This will include creating the pages in react, and beginning the design inspired from our wireframes. 
             Also creating our contracts, controller and our backend folders and files.
             Our group made the decision, to create a Gantt chart to visualise our plan for the development of the project. 
@@ -42,7 +42,7 @@ const weeks = [
             Furthermore, we decided after a meeting with a teacher, 
             to use the teams planning tool, to further divide our plan into smaller sections. Because of this we have a more detailed work plan and can give out tasks to each team member.
             We discussed the flow of our wireframes after noticing inconsistencies between the web application and the mobile app and changed the flow. We want to change the wireframes, 
-            so they fit our decisions, but have decided it’s not something we prioritise as of right now. 
+            so they fit our decisions, but have decided its not something we prioritise as of right now. 
             <br/> 
             We also decided on some login decisions, 
             and where this option should be available on which pages. Now our home page will instead be our welcome page, instead of a login page. 
@@ -53,14 +53,14 @@ const weeks = [
     { label: "September 15th – 21st ", content: (
         <p className="text-lg">
             Last week I made the decion to redo my portfolio and change the framework from Angular to React using next.js, 
-            to give more further opportunity to practice the skill I’m focusing on this semester. I began this Monday and has proved to be a tough but useful decision, because even though it has caused much frustration, 
+            to give more further opportunity to practice the skill Im focusing on this semester. I began this Monday and has proved to be a tough but useful decision, because even though it has caused much frustration, 
             it has also proved to be a wonderful learning opportunity, and I am very pleased with how the progress is going. 
             <br/> 
             <br/> 
-            I have also highly prioritised to add the content and text I’ve written the past couple of weeks to the portfolio, to document the progress of this semester, and our development process. 
+            I have also highly prioritised to add the content and text Ive written the past couple of weeks to the portfolio, to document the progress of this semester, and our development process. 
 
             This week, I will be focusing on finishing the two use cases CreateHorse and CreateRider, including the pages in react, but also the backend contracts. If this proves to go faster than intended, 
-            I also want to improve the overall design of the pages, so they are more true to the wireframes we’ve designed.
+            I also want to improve the overall design of the pages, so they are more true to the wireframes weve designed.
         </p> 
     )},
 

@@ -34,7 +34,7 @@ export default function HomePage() {
                 className="text-lg md:text-xl mt-8 max-w-xl"
                 style={{ color: "#50250c" }}
                 >
-                  Hi! I'm Alberte, and welcome to my online portolio.
+                  Hi! Im Alberte, and welcome to my online portolio.
               </motion.p>
               {/*
               <motion.p
