@@ -9,29 +9,35 @@ export default function HomePage() {
       <section className="min-h-screen flex flex-col justify-center items-center 
                           bg-gradient-to-b from-[#f4d3be] to-[#feddf1] text-center">
 
-          <div className="flex flex-col items-center justify-center h-screen -mt-40">
-            <div className="w-full text-center">
-              <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, ease: "easeOut" }}
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center"
-                style={{ color: "#50250c" }}
-                >
-                  {"Hi, I'm Alberte!"}
-              </motion.h1>
+          <div className="flex flex-col items-center justify-center -mt-20 space-y-6">
+
+              {/* Logo Section */}
+              <div className="flex flex-col items-center space-y-2">
+                <span className="w-px h-15 bg-[#50250c]"/>
+              
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center"
+                  style={{ color: "#50250c" }}>
+                PORTFOLIO
+              </h1>
+              <p className="text-lg tracking-[0.3em] uppercase" style={{color: "#50250c"}}>
+                Alberte Øgendahl
+              </p>
+
+              <span className="w-px h-15 bg-[#50250c]"/>
+
             </div>
+            
             <div className="w-full text-center">
               <motion.p
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
-                className="text-2xl font-semi-bold"
+                className="text-lg md:text-xl mt-8 max-w-xl"
                 style={{ color: "#50250c" }}
                 >
-                  This is my portfolio for my 4th semester in my computer science degree 
-                  at UCL Erhvervsakademi og Proffesionshøjskole in Denmark.
+                  Hi! I'm Alberte, and welcome to my online portolio.
               </motion.p>
+              {/*
               <motion.p
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -46,6 +52,7 @@ export default function HomePage() {
                 Our project is essentially an event management platform, directed at smaller riding school and clubs, to manage their events and competitions in a more practical manner. As of right now, the only other solution is a system, which has high expenses that can be hard for smaller clubs and schools to cover. 
                 We want to create this platform, so different users can get different wishes fulfilled. The riders who participate in these events can create a user, where they can register their personal information, their horses, and their equipment, so all the necessary information is gathered in one place. 
               </motion.p>
+              */}
             </div>
           </div>
       </section>
