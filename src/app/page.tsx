@@ -14,17 +14,16 @@ export default function HomePage() {
               {/* Logo Section */}
               <div className="flex flex-col items-center space-y-2">
                 <span className="w-px h-15 bg-[#50250c]"/>
-              
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center"
-                  style={{ color: "#50250c" }}>
-                PORTFOLIO
-              </h1>
-              <p className="text-lg tracking-[0.3em] uppercase" style={{color: "#50250c"}}>
-                Alberte Øgendahl
-              </p>
+                <a href="https://cdn.discordapp.com/attachments/1358262198509764678/1420000917717254144/Snapchat-355678249.jpg?ex=68d3ce69&is=68d27ce9&hm=4d73b07081424b5653101cb4bd7b03b40a8ca4dd53d43e7f00cc25a2b61b4ef5&"></a>
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center"
+                      style={{ color: "#50250c" }}>
+                    PORTFOLIO
+                  </h1>
+                  <p className="text-lg tracking-[0.3em] uppercase" style={{color: "#50250c"}}>
+                    Alberte Øgendahl
+                  </p>
 
               <span className="w-px h-15 bg-[#50250c]"/>
-
             </div>
             
             <div className="w-full text-center">
