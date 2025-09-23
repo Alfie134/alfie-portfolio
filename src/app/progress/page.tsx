@@ -46,7 +46,7 @@ const weeks = [
             <br/> 
             We also decided on some login decisions, 
             and where this option should be available on which pages. Now our home page will instead be our welcome page, instead of a login page. 
-            Because of the decisions and our planning, we're now well equipped to begin our work, and all know what our tasks are for the upcomming week.
+            Because of the decisions and our planning, were now well equipped to begin our work, and all know what our tasks are for the upcomming week.
         </p>  
     )},
 
