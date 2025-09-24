@@ -7,7 +7,7 @@ export default function HomePage() {
     <main>
       {/* Hero Section */ }
       <section className="min-h-screen flex flex-col justify-center items-center 
-                          bg-gradient-to-b from-[#333d29] to-[#A4AC86] text-center">
+                          bg-gradient-to-b from-[#2D3824] to-[#8D9867] text-center">
 
           <div className="flex flex-col items-center justify-center -mt-20 space-y-6">
 
