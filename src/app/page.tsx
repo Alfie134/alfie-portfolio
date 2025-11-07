@@ -13,17 +13,16 @@ export default function HomePage() {
 
               {/* Logo Section */}
               <div className="flex flex-col items-center space-y-2">
-                <span className="w-px h-15 bg-[#50250c]"/>
+                <span className="w-px h-15 bg-[#c4b6ab]"/>
                 <a href="https://cdn.discordapp.com/attachments/1358262198509764678/1420000917717254144/Snapchat-355678249.jpg?ex=68d3ce69&is=68d27ce9&hm=4d73b07081424b5653101cb4bd7b03b40a8ca4dd53d43e7f00cc25a2b61b4ef5&"></a>
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center"
-                      style={{ color: "#50250c" }}>
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-[#c4b6ab]">
                     PORTFOLIO
                   </h1>
-                  <p className="text-lg tracking-[0.3em] uppercase" style={{color: "#50250c"}}>
+                  <p className="text-lg tracking-[0.3em] uppercase text-[#d5ccab] font-bold">
                     Alberte Øgendahl
                   </p>
 
-              <span className="w-px h-15 bg-[#50250c]"/>
+              <span className="w-px h-15 bg-[#c4b6ab]"/>
             </div>
             
             <div className="w-full text-center">
@@ -31,8 +30,7 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
-                className="text-lg md:text-xl mt-8 max-w-xl"
-                style={{ color: "#50250c" }}
+                className="text-lg md:text-xl mt-8 max-w-xl text-[#cec1a8]"
                 >
                   Hi! Im Alberte, and welcome to my online portolio.
               </motion.p>

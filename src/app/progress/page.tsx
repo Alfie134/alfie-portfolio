@@ -1,6 +1,7 @@
 'use client'
 
 import { motion, AnimatePresence } from "framer-motion";
+import { label } from "framer-motion/client";
 import { useState } from "react";
 
 const weeks = [
@@ -76,8 +77,42 @@ const weeks = [
 
     { label: "September 22nd - 28th", content: (
         <p className="text-lg">
+            Been further working on my portfolio; colours and text have been updated to a more easily readable colour, and the design looks sleeker and more professional.
 
+            Regarding the project: Adjusting existing pages to look more like the wireframes and added icons. Been working with Lucide, to focus on making it easier to navigate for the user. 
         </p>
+    )},
+
+    {label: "October 27th – November 2nd", content: (
+        <div className="text-lg space-y-4">
+            <p>
+            Due to private reasons, I have been out of the practical stuff for the project. This means that for a while there has been little progression regarding the front-end design of the project. 
+            This is what I hope to get up to date with this week. 
+            </p>
+            <p>
+                The focus will be to get the different pages done, so the layout and colours etc. are true to our wireframes, 
+                and so that there is time to focus more intently on cyber security in November. Hereunder prioritising getting the global layout and design to seem cohesive.
+                I have planned to watch a YouTube video this week… 
+            </p>
+            <p>
+                I&apos;e also noticed doing pages and figuring out issues and errors is easier in react. The logic makes more sense – so far I&apos;e been able to make most of the pages without looking up too much documentation or getting too stuck.  
+            </p>
+        </div>
+    )}, 
+    { label: "November 3rd - 9th", content: (
+        <div className="text-lg space-y-4">
+            <p>
+                The initial plan for this week was to focus on sending out applications to different companies for internship positions. Because our deadline is in the beginning of December, 
+                its also becomming incresingly clear that were getting more limited on time. Therefore prioritising is necessary. 
+                The front-end aspect of the project has ended up being a bigger project that we initially thought, which is why Ive found it difficult to prioritise getting started with the cyber security aspect. 
+                This is definetly something I wish to change in November. An introduction to the CIA Triad from a teacher during a guild meeting did make it easier to get started though. 
+            </p>
+            <p>
+                After a team meeting this week, it became clear that one of the backend developers wanted to focus on the data aspects of one of his focus areas. 
+                This meant wanting to work with data from the database, on the frontend. Therefore, I have the past two days focused on setting up and designing the results page. 
+                It also allows me to work with more backend connection in my code, instead of solely focusing on the frontend design. 
+            </p>
+        </div>
     )}
   // Add more weeks here
 ];
