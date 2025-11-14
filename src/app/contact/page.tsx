@@ -1,4 +1,4 @@
-import {Mail, Phone, MapPin, Github, Linkedin, Heart} from "lucide-react"
+import {Mail, Phone, MapPin, Github, Linkedin} from "lucide-react"
 
 export default function ContactPage() {
     return (
@@ -24,13 +24,19 @@ export default function ContactPage() {
                 <div className="flex flex-col items-center">
                     <MapPin className="w-25 h-25 mb-2"/>
                     <span className="font-bold text-xl"> Location </span>
-                    <p> Silkeborg, Denmark </p>,k
+                    <p> Silkeborg, Denmark </p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <Heart className="w-25 h-25 mb-2"/>
-                    <span className="font-bold text-xl"> Socials </span>
-                    <p> LinkedIn: </p>
-                    <p> GitHub: </p>
+                    <a href="https://www.linkedin.com/in/alberte-%C3%B8gendahl-5a9583329/">
+                        <Linkedin className="w-25 h-25 mb-2"/>
+                        <span className="font-bold text-xl"> LinkedIn </span>
+                    </a>
+                </div>
+                <div className="flex flex-col items-center">
+                    <a href="https://github.com/Alfie134">
+                        <Github className="w-25 h-25 mb-2"/>
+                        <span className="font-bold text-xl"> GitHub </span>
+                    </a>
                 </div>
             </div>
         </section>
