@@ -30,26 +30,32 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
-                className="text-lg md:text-xl mt-8 max-w-xl text-[#cec1a8]"
+                className="text-lg md:text-xl mt-8 max-w-1xl text-[#cec1a8]"
                 >
                   Hi! Im Alberte, and welcome to my online portolio.
               </motion.p>
-              {/*
+            </div>
+            <div className="w-full text-center">
               <motion.p
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.5, ease: "easeOut" }}
-                className="text-lg"
-                style={{ color: "#50250c" }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                className="text-lg md:text-xl mt-8 max-w-1xl bg text-[#cec1a8]"
                 >
-                  In our 4th semester project of our degree, we are asked to choose 2 subject that we will specialise in during the semester. We then in a group combine our chosen subjects to develop a project in which we use the areas of expertise. 
-                For this semester I have chosen web development and frontend technologies, and cyber security. 
-                Another team member, Mathilde, and I have the same focus areas, and will therefore be able to expand a bit more on the different things we choose to include. 
-                We have chosen to create our frontend in React to be on par with popular industry standards, and to be equipped to enter the workforce with relevant competencies. 
-                Our project is essentially an event management platform, directed at smaller riding school and clubs, to manage their events and competitions in a more practical manner. As of right now, the only other solution is a system, which has high expenses that can be hard for smaller clubs and schools to cover. 
-                We want to create this platform, so different users can get different wishes fulfilled. The riders who participate in these events can create a user, where they can register their personal information, their horses, and their equipment, so all the necessary information is gathered in one place. 
+                  As our 4th semester is coming to an end, my portfolio will regarding the Horse Event project be more retrospective, as we won&apos;t continue working on the project.
+                  The next semester is where we will focus on our internship, and my portfolio will also reflect this, showing the work and learning I will be doing meanwhile. 
               </motion.p>
-              */}
+            </div>
+            <div className="w-full text-center">
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                className="text-lg md:text-xl mt-8 max-w-1xl  text-[#cec1a8]"
+                >
+                  While Im not working on the project, and will be focusing on preparing my portfolio for my exam in December, I do have more time to explore interests that still has a coding aspect. 
+                  In these next months this includes exploring modding for the game Stardew Valley, understanding coding regarding game development, and the graphics as well. 
+              </motion.p>
             </div>
           </div>
       </section>

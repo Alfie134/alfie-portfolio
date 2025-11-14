@@ -24,7 +24,7 @@ export default function ContactPage() {
                 <div className="flex flex-col items-center">
                     <MapPin className="w-25 h-25 mb-2"/>
                     <span className="font-bold text-xl"> Location </span>
-                    <p> Silkeborg, Denmark </p>
+                    <p> Silkeborg, Denmark </p>,k
                 </div>
                 <div className="flex flex-col items-center">
                     <Heart className="w-25 h-25 mb-2"/>

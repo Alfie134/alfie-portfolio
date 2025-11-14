@@ -113,6 +113,20 @@ const weeks = [
                 It also allows me to work with more backend connection in my code, instead of solely focusing on the frontend design. 
             </p>
         </div>
+    )},
+
+    { label: "November 10th - 16th", content: (
+        <div className="text-lg space-y-4">
+            <p>
+                For this week one of the primary focus areas will be to add my learning resources to my portfolio. 
+                This will primarily be the resources for the front-end, 
+                because this week is more intensely focused on doing research on cyber security. 
+            </p>
+            <p>
+                As we had talked about two factor authentication, due to the more sensitive information that would be handled in the application 
+                this will likely also be something I&apos;ll be focusing on researching a bit more in depth. 
+            </p>
+        </div>
     )}
   // Add more weeks here
 ];
@@ -145,7 +159,7 @@ export default function ProgressPage() {
                     className="text-2xl font-bold text-center mb-16"
                     style={{ color: "#B6AD90" }}
                 >
-                    The progress of how this semester has unfolded will be divided into the weeks throught the months. 
+                    Here you&apos;ll see the progress of how this semester has unfolded. The semester will be divided into the weeks throught the months. The learning material and resources will be linked, and sectioned into different subject areas. 
                 </motion.p>
 
             {/*Dropdown Section*/}
