@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const weeks = [
     { label: "August 18th – 24th ", content: (
-        <div className="text-lg space-y-4">
+        <div className="text-xl space-y-4">
 			<p>
 				This week we focused on designing and finishing our wireframes for our web application and the app. At this point we do still need to elaborate on them, so they include the different roles the users can have in our application.
 			</p>
@@ -163,7 +163,6 @@ export default function ProgressPage() {
                 </motion.p>
 
             {/*Dropdown Section*/}
-            <div className="mt-12 w-full flex flex-col items-center"> {/* Both on the same line + font bigger and bold */}
                 <div className="mt-12 max-w-3xl w-full space-y-4 text-left" style={{color: "#cec1a8"}}>
                     {/* RIGHT DROPDOWN SECTION — PROCESS */}
                     <div className="columns-1 md:columns-2 gap-8 space-y-4">
@@ -201,7 +200,6 @@ export default function ProgressPage() {
                         ))}
                     </div>
                 </div>
-            </div>
         </section>
     )
 }
