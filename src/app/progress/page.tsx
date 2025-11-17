@@ -1,9 +1,17 @@
 'use client'
 
 import { motion, AnimatePresence } from "framer-motion";
-import { label } from "framer-motion/client";
 import { useState } from "react";
 
+
+
+const process = [
+    {label: "Semester Process", content: (
+        <div></div>
+    )
+
+    }
+]
 const weeks = [
     { label: "August 18th – 24th ", content: (
         <div className="text-lg space-y-4">
@@ -131,9 +139,8 @@ const weeks = [
   // Add more weeks here
 ];
 
-
 export default function ProgressPage() {
-    const[openIndex, setOpenIndex] = useState<number | null>(null);
+    const[openIndex, setOpenIndex] = useState<string | null>(null);
 
     return (
         <section className="min-h-screen flex flex-col justify-center items-center 
@@ -147,7 +154,7 @@ export default function ProgressPage() {
                     className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center"
                     style={{ color: "#B6AD90" }}
                 >
-                    Our progress during the semester
+                    The process throughout 4th semester
                 </motion.h1>
             </div>
 
@@ -156,43 +163,119 @@ export default function ProgressPage() {
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
-                    className="text-2xl font-bold text-center mb-16"
+                    className="text-xl font-bold text-center mb-16"
                     style={{ color: "#B6AD90" }}
                 >
-                    Here you&apos;ll see the progress of how this semester has unfolded. The semester will be divided into the weeks throught the months. The learning material and resources will be linked, and sectioned into different subject areas. 
+                    This section shows the process and hereunder the progress if the semester. The semester will be divided into the weeks throught the months. 
+                    Furthermore, the general and individual learning goals will also be shown here.
                 </motion.p>
 
-            {/*Dropdown Section*/}
-            <div className=" mt-12 max-w-3xl w-full space-y-4 text-left" style={{color: "#A4AC86"}}>
-                {weeks.map((week, index) => (
-                    <div key={index} className="cursor-pointer">
-                        <h2 
-                            onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                            className="font-bold text-lg sm:text-2xl hover:text[#50250c] transition-colors duration-200">
-                            {week.label}
-                        </h2>
-                        <motion.span
-                            animate={{ rotate: openIndex === index ? 180 : 0 }}
-                            transition={{duration: 0.3, ease: "easeOut"}}
-                            className="inline-block">
-                            ▼
-                        </motion.span>
-
-                        <AnimatePresence>
-                            {openIndex === index && (
-                                <motion.div
-                                    className="p-6 border-t text-[#C2C5AA] max-h-150 overflow-y-auto"
-                                    initial={{ opacity: 0, height: 0 }}
-                                    animate={{ opacity: 1, height: "auto" }}
-                                    exit={{ opacity: 0, height: 0 }}
-                                    transition={{ duration: 0.4, ease: "easeOut" }}
-                                    >
-                                        {week.content}
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
+             {/* SUBJECT AREAS */}
+                <div className=" mt-12 max-w-6xl w-full space-y-4 text-center" style={{color: "#cec1a8"}}>
+                    <h1 className="text-2xl font-bold text-[#cec1a8]"> Subject Areas </h1>
+                    <div className="flex flex-col lg:flex-row justify-center gap-12 mt-8">
+                        <div>
+                            <h2 className="text-xl font-bold"> Knowledge </h2>
+                            <ul className="space-y-4 text-left list-disc list-inside text-body">
+                                <li>Have knowledge of modern front-end architecture in React and Next.js, including component structure, props/state-management, Client vs. Server components, and routing with App Router.</li>
+                                <li>Know central security concepts regarding API-communication, such as JWT-authentication, authorization, and CORS (endpoint security).</li>
+                                <li>Know and understand the architecture and communication between front-end and backend in the HorseEvent project including the Contracts folder, CTO&apos;s, endpoints, and async data management. </li>
+                            </ul>
+                        </div>
+                        <div className="space-y-4">
+                            <h2 className="text-xl font-bold"> Skills </h2>
+                            <ul className="space-y-4 text-left list-disc list-inside text-body">
+                                <li>To be able to identify front-end related issues in the HorseEvent project like state management, data management, UI structure, and perform targeted and specified literature searches to find the relevant technical solutions. </li>
+                                <li>Develop and implement UI components in React/Next.js, including reusable components, Tailwind styling, and layout structure true to UX principles.  </li>
+                                <li>Evaluate different solutions for front-end problems, such as state libraries, sever components, caching, client sides validation, and to argue for the decisions made in the project. </li>
+                            </ul>
+                        </div>
+                        <div className="space-y-4">
+                            <h2 className="text-xl font-bold"> Competencies  </h2>
+                            <ul className="space-y-4 text-left list-disc list-inside text-body columns-1 md:columns-2">
+                                <li>Independently investigate new front-end technologies like Next.js, App Router, new React hooks, or Tailwind techniques and integrate them directly into the Horse Event Project. </li>
+                                <li>Independently be able to learn and use new concepts regarding web security, like optimised login flows, token management, validation layers, and put it into perspective regarding the Horse Event Project&apos;s architecture. </li>
+                                <li>Be able to relate the front-end work within the Horse Event Project to this semester&apos;s subject areas, including system development, web architecture, and security. </li>
+                                <li>Understand how front-end and backend interact and work together and be able to compare technical decisions for the front-end with security and architectural considerations. </li>
+                                <li>Be able to take experience from the Horse Event Project to new projects, like the UX-structure, coding styles, security principles, and integration with the backend. </li>
+                                <li>Independently analyse a UI/UX issue and develop a solution which lives up to both the functional requirements but also takes security and user flow into consideration. </li>
+                            </ul>
+                        </div>
                     </div>
-                ))}
+                </div>
+            
+            {/*Dropdown Section*/}
+            <div className="mt-12 w-full flex flex-col items-center"> {/* Both on the same line + font bigger and bold */}
+                <div className=" mt-12 max-w-3xl w-full space-y-4 text-left" style={{color: "#A4AC86"}}>
+                    {/* RIGHT DROPDOWN SECTION — PROCESS */}
+                    {process.map((item, wkIndex) => (
+                        <div key={wkIndex} className="cursor-pointer">
+                            <div className="flex items-center gap-2" 
+                                onClick={() => setOpenIndex(openIndex === `week-${wkIndex}` ? null : `week-${wkIndex}`)}>
+                                <h2 className="font-bold text-lg sm:text-2xl hover:text[#50250c] transition-colors duration-200">
+                                    {item.label}
+                                </h2>
+                                <motion.span
+                                    animate={{ rotate: openIndex === `week-${wkIndex}` ? 180 : 0 }}
+                                    transition={{duration: 0.3, ease: "easeOut"}}
+                                    className="inline-block">
+                                    ▼
+                                </motion.span>
+                            </div>
+
+                            <AnimatePresence>
+                                {openIndex === `week-${wkIndex}` && (
+                                    <motion.div
+                                        className="p-6 border-t text-[#C2C5AA] max-h-150 overflow-y-auto"
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: "auto" }}
+                                        exit={{ opacity: 0, height: 0 }}
+                                        transition={{ duration: 0.4, ease: "easeOut" }}
+                                        >
+                                        <div>
+                                            {item.content}
+                                        </div>
+
+                                        <div className="space-y-3">
+                                            {weeks.map((week, wkIndex) => (
+                                                <div key={`week-${wkIndex}`} className="cursor-pointer pl-4 border-l">
+                                                    <div className="flex items-center gap-2"
+                                                        onClick={() =>
+                                                            setOpenIndex (openIndex === `week-${wkIndex}` ? null : `week-${wkIndex}`)}
+                                                        >
+                                                            <h3 className="font-bold text-lg sm:text-2xl hover:text[#50250c] transition-colors duration-200">
+                                                                {week.label}
+                                                            </h3>
+                                                            <motion.span
+                                                                animate={{ rotate: openIndex === `week-${wkIndex}` ? 180 : 0 }}
+                                                                transition={{duration: 0.3, ease: "easeOut"}}
+                                                                className="inline-block">
+                                                                ▼
+                                                            </motion.span>
+                                                    </div>
+
+                                                    <AnimatePresence>
+                                                        {openIndex === `week-${wkIndex}` && (
+                                                            <motion.div
+                                                                className="p-6 border-t text-[#C2C5AA] max-h-150 overflow-y-auto"
+                                                                initial={{ opacity: 0, height: 0 }}
+                                                                animate={{ opacity: 1, height: "auto" }}
+                                                                exit={{ opacity: 0, height: 0 }}
+                                                                transition={{ duration: 0.4, ease: "easeOut" }}
+                                                                >
+                                                                    {week.content}
+                                                            </motion.div>
+                                                        )}
+                                                    </AnimatePresence>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     )
