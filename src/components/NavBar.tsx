@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link"
 import React from "react";
+import { label } from "framer-motion/client";
 
 interface NavBarProps {
     color?:string;
@@ -15,7 +16,8 @@ const NavBar: React.FC<NavBarProps> = ({ color = "#f3f4f6" }) => {
         {href: "/", label: "Home"},
         {href: "about", label: "About Me"},
         {href: "projects", label: "My Projects"},
-        {href: "progress", label: "Semester Progress"},
+        {href: "learning-goals", label: "Learning Goals"},
+        {href: "process", label: "Semester Process"},
         {href: "contact", label: "Contact Me"},
     ];
 
