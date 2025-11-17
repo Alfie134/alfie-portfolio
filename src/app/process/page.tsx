@@ -3,15 +3,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
-
-
-const process = [
-    {label: "Semester Process", content: (
-        <div></div>
-    )
-
-    }
-]
 const weeks = [
     { label: "August 18th – 24th ", content: (
         <div className="text-lg space-y-4">
@@ -172,19 +163,21 @@ export default function ProgressPage() {
             <div className="mt-12 w-full flex flex-col items-center"> {/* Both on the same line + font bigger and bold */}
                 <div className=" mt-12 max-w-3xl w-full space-y-4 text-left" style={{color: "#A4AC86"}}>
                     {/* RIGHT DROPDOWN SECTION — PROCESS */}
-                    {process.map((item, wkIndex) => (
-                        <div key={wkIndex} className="cursor-pointer">
-                            <div className="flex items-center gap-2" 
-                                onClick={() => setOpenIndex(openIndex === `week-${wkIndex}` ? null : `week-${wkIndex}`)}>
-                                <h2 className="font-bold text-lg sm:text-2xl hover:text[#50250c] transition-colors duration-200">
-                                    {item.label}
-                                </h2>
-                                <motion.span
-                                    animate={{ rotate: openIndex === `week-${wkIndex}` ? 180 : 0 }}
-                                    transition={{duration: 0.3, ease: "easeOut"}}
-                                    className="inline-block">
-                                    ▼
-                                </motion.span>
+                    {weeks.map((week, wkIndex) => (
+                        <div key={`week-${wkIndex}`} className="cursor-pointer pl-4 border-l">
+                            <div className="flex items-center gap-2"
+                                onClick={() =>
+                                    setOpenIndex (openIndex === `week-${wkIndex}` ? null : `week-${wkIndex}`)}
+                                >
+                                    <h3 className="font-bold text-lg sm:text-2xl hover:text[#50250c] transition-colors duration-200">
+                                        {week.label}
+                                    </h3>
+                                    <motion.span
+                                        animate={{ rotate: openIndex === `week-${wkIndex}` ? 180 : 0 }}
+                                        transition={{duration: 0.3, ease: "easeOut"}}
+                                        className="inline-block">
+                                        ▼
+                                    </motion.span>
                             </div>
 
                             <AnimatePresence>
@@ -196,46 +189,9 @@ export default function ProgressPage() {
                                         exit={{ opacity: 0, height: 0 }}
                                         transition={{ duration: 0.4, ease: "easeOut" }}
                                         >
-                                        <div>
-                                            {item.content}
-                                        </div>
-
-                                        <div className="space-y-3">
-                                            {weeks.map((week, wkIndex) => (
-                                                <div key={`week-${wkIndex}`} className="cursor-pointer pl-4 border-l">
-                                                    <div className="flex items-center gap-2"
-                                                        onClick={() =>
-                                                            setOpenIndex (openIndex === `week-${wkIndex}` ? null : `week-${wkIndex}`)}
-                                                        >
-                                                            <h3 className="font-bold text-lg sm:text-2xl hover:text[#50250c] transition-colors duration-200">
-                                                                {week.label}
-                                                            </h3>
-                                                            <motion.span
-                                                                animate={{ rotate: openIndex === `week-${wkIndex}` ? 180 : 0 }}
-                                                                transition={{duration: 0.3, ease: "easeOut"}}
-                                                                className="inline-block">
-                                                                ▼
-                                                            </motion.span>
-                                                    </div>
-
-                                                    <AnimatePresence>
-                                                        {openIndex === `week-${wkIndex}` && (
-                                                            <motion.div
-                                                                className="p-6 border-t text-[#C2C5AA] max-h-150 overflow-y-auto"
-                                                                initial={{ opacity: 0, height: 0 }}
-                                                                animate={{ opacity: 1, height: "auto" }}
-                                                                exit={{ opacity: 0, height: 0 }}
-                                                                transition={{ duration: 0.4, ease: "easeOut" }}
-                                                                >
-                                                                    {week.content}
-                                                            </motion.div>
-                                                        )}
-                                                    </AnimatePresence>
-                                                </div>
-                                            ))}
-                                        </div>
+                                            {week.content}
                                     </motion.div>
-                                )}
+                                    )}
                             </AnimatePresence>
                         </div>
                     ))}
