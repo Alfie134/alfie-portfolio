@@ -126,6 +126,9 @@ const weeks = [
                 this will likely also be something I&apos;ll be focusing on researching a bit more in depth. 
             </p>
         </div>
+    )},
+    {label: "November 17th-23rd", content:  (
+        <p></p>
     )}
   // Add more weeks here
 ];
@@ -142,7 +145,7 @@ export default function ProgressPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center"
-                    style={{ color: "#B6AD90" }}
+                    style={{ color: "#cec1a8" }}
                 >
                     The process throughout 4th semester
                 </motion.h1>
@@ -154,47 +157,49 @@ export default function ProgressPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="text-xl font-bold text-center mb-16"
-                    style={{ color: "#B6AD90" }}
+                    style={{ color: "#cec1a8" }}
                 >
                     This section shows the process of the semester.
                 </motion.p>
 
             {/*Dropdown Section*/}
             <div className="mt-12 w-full flex flex-col items-center"> {/* Both on the same line + font bigger and bold */}
-                <div className=" mt-12 max-w-3xl w-full space-y-4 text-left" style={{color: "#A4AC86"}}>
+                <div className="mt-12 max-w-3xl w-full space-y-4 text-left" style={{color: "#cec1a8"}}>
                     {/* RIGHT DROPDOWN SECTION — PROCESS */}
-                    {weeks.map((week, wkIndex) => (
-                        <div key={`week-${wkIndex}`} className="cursor-pointer pl-4 border-l">
-                            <div className="flex items-center gap-2"
-                                onClick={() =>
-                                    setOpenIndex (openIndex === `week-${wkIndex}` ? null : `week-${wkIndex}`)}
-                                >
-                                    <h3 className="font-bold text-lg sm:text-2xl hover:text[#50250c] transition-colors duration-200">
-                                        {week.label}
-                                    </h3>
-                                    <motion.span
-                                        animate={{ rotate: openIndex === `week-${wkIndex}` ? 180 : 0 }}
-                                        transition={{duration: 0.3, ease: "easeOut"}}
-                                        className="inline-block">
-                                        ▼
-                                    </motion.span>
-                            </div>
+                    <div className="columns-1 md:columns-2 gap-8 space-y-4">
+                        {weeks.map((week, wkIndex) => (
+                            <div key={`week-${wkIndex}`} className="cursor-pointer pl-4 border-l">
+                                <div className="flex items-center gap-2"
+                                    onClick={() =>
+                                        setOpenIndex (openIndex === `week-${wkIndex}` ? null : `week-${wkIndex}`)}
+                                    >
+                                        <h3 className="font-bold text-lg sm:text-2xl hover:text[#50250c] transition-colors duration-200">
+                                            {week.label}
+                                        </h3>
+                                        <motion.span
+                                            animate={{ rotate: openIndex === `week-${wkIndex}` ? 180 : 0 }}
+                                            transition={{duration: 0.3, ease: "easeOut"}}
+                                            className="inline-block">
+                                            ▼
+                                        </motion.span>
+                                </div>
 
-                            <AnimatePresence>
-                                {openIndex === `week-${wkIndex}` && (
-                                    <motion.div
-                                        className="p-6 border-t text-[#C2C5AA] max-h-150 overflow-y-auto"
-                                        initial={{ opacity: 0, height: 0 }}
-                                        animate={{ opacity: 1, height: "auto" }}
-                                        exit={{ opacity: 0, height: 0 }}
-                                        transition={{ duration: 0.4, ease: "easeOut" }}
-                                        >
-                                            {week.content}
-                                    </motion.div>
-                                    )}
-                            </AnimatePresence>
-                        </div>
-                    ))}
+                                <AnimatePresence>
+                                    {openIndex === `week-${wkIndex}` && (
+                                        <motion.div
+                                            className="p-6 border-t text-[#C2C5AA] max-h-150 overflow-y-auto"
+                                            initial={{ opacity: 0, height: 0 }}
+                                            animate={{ opacity: 1, height: "auto" }}
+                                            exit={{ opacity: 0, height: 0 }}
+                                            transition={{ duration: 0.4, ease: "easeOut" }}
+                                            >
+                                                {week.content}
+                                        </motion.div>
+                                        )}
+                                </AnimatePresence>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
