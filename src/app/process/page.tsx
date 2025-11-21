@@ -128,7 +128,34 @@ const weeks = [
         </div>
     )},
     {label: "November 17th-23rd", content:  (
-        <p></p>
+        <div className="text-lg space-y-4">
+            <p>
+                As our login feature has implemented and the implementation of JWT-tokens is started I will prioritise to finish that this week. 
+                However, from the LinkedIn course I finished I also became aware of main concerns regarding web sites, 
+                hereunder cross-site scripting (XXS) and cross-site request forgery (CSRF). Because of this, those two areas will probably be one of my focus areas of research and will attempt to implement a defence against this in our application. 
+            </p>
+            <p>
+                The first step to do this is to create a threat model. There are generally common concerns and risks when dealing with a web application however, 
+                getting a deeper understanding of this model and the concerns more specific to our application is not only good practice for future applications and projects, 
+                but also a further step into more in depth security practices. 
+            </p>
+            <p>
+                Since the end of the semester is approaching, my main focus this week has been to prepare my portfolio so it&apos;s ready for my exam in December. 
+                This includes adding my learning goals but also adding/showing my learning materials/resources.
+                For next week I would like to make a more cohesive walk through of the process of the project and show how I&apos;ve attempted to live up to the learning goals set for the semester. 
+            </p>
+            <p>
+                It could prove to be a challenge to balance all these things: implementing security aspects in the project, researching security areas, and updating and developing my portfolio. 
+                But let&apos;s see how it goes, shall we?
+            </p>
+        </div>
+    )},
+    {label:"November 24th-30th", content: (
+        <div className="text-lg space-y-4">
+            <p>
+
+            </p>
+        </div>
     )}
   // Add more weeks here
 ];

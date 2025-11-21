@@ -16,6 +16,7 @@ const NavBar: React.FC<NavBarProps> = ({ color = "#f3f4f6" }) => {
         {href: "about", label: "About Me"},
         {href: "projects", label: "My Projects"},
         {href: "learning-goals", label: "Learning Goals"},
+        {href: "learning-material", label: "Larning Material"},
         {href: "process", label: "Semester Process"},
         {href: "contact", label: "Contact Me"},
     ];
