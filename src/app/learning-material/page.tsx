@@ -18,7 +18,7 @@ export default function LearningMaterialPage() {
 
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto"> 
                     {/* Frontend Card */}
-                    <div className="bg-[#c4b6ab] rounded-2xl p-8 shadow-x1">
+                    <div className="bg-[#c4b6ab] rounded-2xl p-8 shadow-x1 border border-[#2D3824] border-2">
                         <h2 className="text-3xl font-bold text-[#6A6352] items-center gap-2">
                             Frontend Design
                         </h2>
@@ -28,7 +28,7 @@ export default function LearningMaterialPage() {
                     </div>
 
                     {/* Security Card */}
-                    <div className="bg-[#c4b6ab] rounded-2xl p-8 shadow-x1">
+                    <div className="bg-[#c4b6ab] rounded-2xl p-8 shadow-x1 border border-[#2D3824] border-2">
                         <h2 className="text-3xl font-bold text-[#6A6352] items-center gap-2">
                             Security Material
                         </h2>

@@ -17,13 +17,13 @@ export default function ResourceItem ({name, items}: ResourceProps) {
     return (
         <div className="mb-4">
             <div className={`flex justify-between items-center cursor-pointer p-4 rounded-xl border-2 transition-all
-                ${ open ? "bg-[#668052] text-white" : "bg-gray-100 border-[#2D3824]"}`}
+                ${ open ? "bg-[#668052] text-white" : "bg-[#E1DAD5] border-[#2D3824]"}`}
                 onClick={() => setOpen(!open)}
             >
                 <span className="font-semibold">{name}</span>
                 <span className={`transition-transform ${open ? "rotate-180" : ""}`}>▼</span>
             </div>
-            <div className={`overflow-hidden transition-all bg-white rounded-b-xl
+            <div className={`overflow-hidden transition-all bg-[#E6EBE4] rounded-b-xl
                 ${open ? "max-h-[800] p-4 border border-[#2D3824] border-t-0" : "max-h-0 p-0"}`}
             >
                 <div className="flex flex-col gap-4">
