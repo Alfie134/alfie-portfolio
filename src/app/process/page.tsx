@@ -153,7 +153,18 @@ const weeks = [
     {label:"November 24th-30th", content: (
         <div className="text-lg space-y-4">
             <p>
-
+                I had planned to begin the implementation of Json Web Tokens for our login function last week. 
+                However, due to different work schedules, and difficutly knowing what was the right decision I wasn&apos;t able to start last week. This inevitably means that this last week of the semester, 
+                before we hand in our final product, I will have to implement JWT, as well as try to implement a defence against Cross Site Scripting.
+            </p>
+            <p>
+                As Ea has already setup the start of the JWT implementation it should be manageable to get the tasks done in a somewhat timely manner. 
+                Since XSS is a newer concept to me, and since I haven&apos;t tried to implement security against these types of attacks, I do estimate it will take longer, 
+                simply due to the trial and error that&apos;s inevitable to occur. 
+            </p>
+            <p>
+                I am currently waiting for a merge to happen from a working branch to the master branch, so I can start the implementation. This gives me good time to prep, and further dive into how the JWT are properly implemented. 
+                Here these articles have helped greatly: <a href="https://www.jwt.io/introduction#what-is-json-web-token" className="font-bold">Introduction To Jason Web Tokens</a>
             </p>
         </div>
     )}

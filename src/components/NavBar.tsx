@@ -8,42 +8,55 @@ interface NavBarProps {
     color?:string;
 }
 
-const NavBar: React.FC<NavBarProps> = ({ color = "#f3f4f6" }) => {
+const NavBar: React.FC<NavBarProps> = ({ color = "transparent" }) => {
     const pathname = usePathname();
 
-    const links = [
+    const linksLeft = [
         {href: "/", label: "Home"},
-        {href: "about", label: "About Me"},
-        {href: "projects", label: "My Projects"},
-        {href: "learning-goals", label: "Learning Goals"},
-        {href: "learning-material", label: "Larning Material"},
-        {href: "process", label: "Semester Process"},
-        {href: "contact", label: "Contact Me"},
+        {href: "../about", label: "About Me"}
+    ]
+
+    const linksRight = [
+        {href: "../projects", label: "Work & Play"},
+        {href: "../contact", label: "Reach Out"}
     ];
+
+    const linkClass = (href: string) => {
+        const isActive = pathname === href || pathname.startsWith(href + '/');
+        return `px-4 py-2 rounded-full transition-colors duration-300 ${
+            isActive
+                ? 'text-[#750012]'
+            : 'text-[var(--navbar-theme)] hover:bg-[#522323] hover:text-[#C2C5AA]'
+        }`;  
+    };
 
     return (
         <header 
-            className="bg-white shadow-md fixed w-full z-50"
-            style={{backgroundColor: color}}>
-            <nav className="container mx-auto flex justify-center items-center p-4">
-                <ul className="flex space-x-10 text-xl text-[#C2C5AA] font-semibold">
-                    {links.map(({href, label}) => {
-                        const isActive = pathname === href;
-                        return (
+            className="fixed w-full z-50 bg-transparent"
+            style={{backgroundColor: color}}
+        >
+            <nav className="mx-auto max-w-6xl px-6 pb-4">
+                <div className="flex items-center justify-between">
+                    <ul className="flex items-center gap-10 text-xl">
+                        {linksLeft.map(({href, label}) => (
                             <li key={href}>
-                                <Link
-                                    href={href}
-                                    className={`px-4 py-2 rounded-full transition-colors duration-300 ${
-                                        isActive
-                                            ? "bg-[#A4AC86] text-[#414833]"
-                                            : "text-[#C2C5AA] hover:bg-[#656D4A] hover:text-[#C2C5AA]"
-                                                }`}>
-                                        {label}
+                                <Link href={href} className={linkClass(href)}>
+                                    {label}
                                 </Link>
                             </li>
-                        );
-                    })}
-                </ul>
+                        ))}
+                    </ul>
+
+                    <ul className="flex items-center gap-10 text-xl">
+                        {linksRight.map(({ href, label }) => (
+                            <li key={href}>
+                                <Link href={href} className={linkClass(href)}>
+                                    {label}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </nav>
         </header>
     );    

@@ -3,7 +3,7 @@ import {Mail, Phone, MapPin, Github, Linkedin} from "lucide-react"
 export default function ContactPage() {
     return (
         <section className="min-h-screen flex flex-col justify-center items-center 
-        bg-gradient-to-b from-[#2D3824] to-[#8D9867] text-center pt-20">
+                            text-center pt-20">
             <h1 className="text-4xl font-bold mb-4 text-[#B6AD90]">
                 Get in touch!
             </h1>

@@ -1,12 +1,54 @@
 @import "tailwindcss";
+:root {
+  --bg1: #4c010e; /*normal colour = #f5eee6*/
+  --bg2: #b6cee8;
+  --header-red: #2E0004;
+  --text-red: #41000B;
+  --navbar-theme: #fbf7ba;
+  --header-yellow: #fbf7ba;
+  --text-yellow: #fbf7ba;
+}
+
+[data-theme='dark'] {
+  --bg1: #4c010e;
+  --bg2: #1a0004;
+}
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #fefefe;
-  color: 111; /* TEXT COLOUR */
+  background: linear-gradient(var(--bg1), var(--bg2));
+  color: var(--text); /* TEXT COLOUR */
 }
 
 section{
   padding: 4rem 2rem;
+}
+
+@layer utilities {
+  .font-joan {
+    font-family: var(--font-joan), serif;
+  }
+
+  .font-fira-code{
+    font-family: var(--font-fira), monospace;
+  }
+  
+  .font-armies-display{
+    font-family: var(--font-armies);
+  }
+
+
+  /*_____________________________Front page Name_____________________________*/
+  .font-kabel{
+    font-family: "Kabel", serif;
+  }
+  .font-blosta-script{
+    font-family: "Blosta Script", serif;
+  }
+/*_________________________Front Page Date_________________________________*/
+  .font-barriecito{
+    font-family: "Barriecito", serif;
+  }
+
 }

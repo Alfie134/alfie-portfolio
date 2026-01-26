@@ -1,60 +1,56 @@
 "use client";
 
-import {motion} from "framer-motion";
-
 export default function HomePage() {
   return (
     <main>
       {/* Hero Section */ }
-      <section className="min-h-screen flex flex-col justify-center items-center 
-                          bg-gradient-to-b from-[#2D3824] to-[#8D9867] text-center">
+      <section className="min-h-screen px-6 pt-32">
+          <div className="mx-auto max-w-6xl">
 
-          <div className="flex flex-col items-center justify-center -mt-20 space-y-6">
+              
 
-              {/* Logo Section */}
+              {/* Portfolio Logo */}
               <div className="flex flex-col items-center space-y-2">
-                <span className="w-px h-15 bg-[#c4b6ab]"/>                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-[#c4b6ab]">
+                <span className="w-px h-15 bg-[#41000B]"/>                  
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center">
                     PORTFOLIO
                   </h1>
-                  <p className="text-lg tracking-[0.3em] uppercase text-[#d5ccab] font-bold">
+                  <p className="text-lg tracking-[0.3em] uppercase font-bold">
                     Alberte Øgendahl
                   </p>
+              <span className="w-px h-15 bg-[#41000B]"/>
+            </div>
 
-              <span className="w-px h-15 bg-[#c4b6ab]"/>
-            </div>
-            
-            <div className="w-full text-center">
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, ease: "easeOut" }}
-                className="text-lg md:text-xl mt-8 max-w-1xl text-[#cec1a8]"
-                >
-                  Hi! Im Alberte, and welcome to my online portolio.
-              </motion.p>
-            </div>
-            <div className="w-full text-center">
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, ease: "easeOut" }}
-                className="text-lg md:text-xl mt-8 max-w-1xl bg text-[#cec1a8]"
-                >
-                  As our 4th semester is coming to an end, my portfolio will regarding the Horse Event project be more retrospective, as we won&apos;t continue working on the project.
-                  The next semester is where we will focus on our internship, and my portfolio will also reflect this, showing the work and learning I will be doing meanwhile. 
-              </motion.p>
-            </div>
-            <div className="w-full text-center">
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, ease: "easeOut" }}
-                className="text-lg md:text-xl mt-8 max-w-1xl  text-[#cec1a8]"
-                >
-                  While Im not working on the project, and will be focusing on preparing my portfolio for my exam in December, I do have more time to explore interests that still has a coding aspect. 
-                  In these next months this includes exploring modding for the game Stardew Valley, understanding coding regarding game development, and the graphics as well. 
-              </motion.p>
-            </div>
+            {/* Top row: left + right */}
+              <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-10 ">
+                {/* Left */}
+                <div className="text-left">
+                  <p className="text-6xl"> Hi, I&apos;m Alberte</p>
+                  <p className="text-4xl">But call me Alfie</p>
+                </div>
+
+                {/* Right */}
+                <div className="text-right font-armies-display">
+                  <p className="text-7xl font-barriecito font-semibold text-[#41000B] leading-none">15</p>
+                  <p className="text-4xl text-[#41000B] -mt-2">jan</p>
+                  <p className="text-2xl text-[#41000B] mt-2 leading-snug">
+                    see what <br /> im doing
+                  </p>
+                </div>
+              </div>
+
+              {/* Lower text block */}
+              <div className="mt-16 grid grid-cols-1 md:grid-cols-2">
+                <div className="md:col-start-2 text-center md:text-left">
+                  <p className="uppercase tracking-widest text-sm">
+                    I am an aspiring developer, and UI/UX designer based in Denmark.
+                  </p>
+                  <p className="uppercase tracking-widest text-sm">
+                    I love everything creative, and have a hunger for learning and developing new
+                    skills. I love earthy and breathy designs, as well as bold colours and designs.
+                  </p>
+                </div>
+              </div>
           </div>
       </section>
     </main>
