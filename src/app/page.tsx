@@ -2,52 +2,34 @@
 
 export default function HomePage() {
   return (
-    <main>
-      {/* Hero Section */ }
-      <section className="min-h-screen px-6 pt-32">
-          <div className="mx-auto max-w-6xl">
-
-              
-
-              {/* Portfolio Logo */}
-              <div className="flex flex-col items-center space-y-2">
-                <span className="w-px h-15 bg-[#41000B]"/>                  
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center">
-                    PORTFOLIO
-                  </h1>
-                  <p className="text-lg tracking-[0.3em] uppercase font-bold">
-                    Alberte Øgendahl
-                  </p>
-              <span className="w-px h-15 bg-[#41000B]"/>
-            </div>
-
+    <main className=" min-h-screen">
+      <section>
+          <div className="mx-auto max-w-[1320px] px-7">
             {/* Top row: left + right */}
-              <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-10 ">
+              <div className="grid grid-cols-12 items-start gap-x-[14px] gap-y-10 text-[var(--text-main)]">
                 {/* Left */}
-                <div className="text-left">
-                  <p className="text-6xl"> Hi, I&apos;m Alberte</p>
-                  <p className="text-4xl">But call me Alfie</p>
+                <div className="col-span-12 md:col-start-2 md:col-end-7 text-left">
+                  <p className="text-8xl font-fira-code tracking-widest">ALBERTE</p>
+                  <p className="text-8xl font-monsieur">Øgendahl</p>
                 </div>
 
                 {/* Right */}
-                <div className="text-right font-armies-display">
-                  <p className="text-7xl font-barriecito font-semibold text-[#41000B] leading-none">15</p>
-                  <p className="text-4xl text-[#41000B] -mt-2">jan</p>
-                  <p className="text-2xl text-[#41000B] mt-2 leading-snug">
-                    see what <br /> im doing
+                <div className="col-span-12 md:col-start-10 md:col-span-2 font-armies-display">
+                  <p className="text-8xl font-barriecito font-semibold leading-none">15jan</p>
+                  <p className="text-4xl mt-0 leading-snug text-right">
+                    what <br/> im <br/> working <br/> on
                   </p>
                 </div>
               </div>
 
               {/* Lower text block */}
-              <div className="mt-16 grid grid-cols-1 md:grid-cols-2">
-                <div className="md:col-start-2 text-center md:text-left">
-                  <p className="uppercase tracking-widest text-sm">
-                    I am an aspiring developer, and UI/UX designer based in Denmark.
+              <div className="mt-16">
+                <div className=" text-center font-fira-code">
+                  <p className="tracking-widest text-[64px]">
+                    DEVELOPER
                   </p>
-                  <p className="uppercase tracking-widest text-sm">
-                    I love everything creative, and have a hunger for learning and developing new
-                    skills. I love earthy and breathy designs, as well as bold colours and designs.
+                  <p className="tracking-widest text-[64px] col-span-12 md:col-start-2 md:col-end-5">
+                    FRONTEND ENTHUSIAST
                   </p>
                 </div>
               </div>

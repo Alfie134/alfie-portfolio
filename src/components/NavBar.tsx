@@ -37,7 +37,7 @@ const NavBar: React.FC<NavBarProps> = ({ color = "transparent" }) => {
         >
             <nav className="mx-auto max-w-6xl px-6 pb-4">
                 <div className="flex items-center justify-between">
-                    <ul className="flex items-center gap-10 text-xl">
+                    <ul className="flex items-center gap-15 text-xl font-fira-code">
                         {linksLeft.map(({href, label}) => (
                             <li key={href}>
                                 <Link href={href} className={linkClass(href)}>

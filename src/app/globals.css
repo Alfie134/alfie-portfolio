@@ -6,7 +6,7 @@
   --text-red: #41000B;
   --navbar-theme: #fbf7ba;
   --header-yellow: #fbf7ba;
-  --text-yellow: #fbf7ba;
+  --text-main: #fbf7ba;
 }
 
 [data-theme='dark'] {
@@ -37,18 +37,25 @@ section{
   .font-armies-display{
     font-family: var(--font-armies);
   }
+  
+  .font-kabel{
+    font-family: var(--font-kabel);
+  }
 
+  .font-herrVon{
+    font-family: var(--font-herrVan);
+  }
+
+  .font-monsieur {
+    font-family: var(--font-monsieur);
+  }
 
   /*_____________________________Front page Name_____________________________*/
-  .font-kabel{
-    font-family: "Kabel", serif;
-  }
-  .font-blosta-script{
-    font-family: "Blosta Script", serif;
-  }
+  
+
 /*_________________________Front Page Date_________________________________*/
   .font-barriecito{
-    font-family: "Barriecito", serif;
+    font-family: var(--font-barri), serif;
   }
 
 }

@@ -26,3 +26,15 @@ export const armiesDisplay = localFont({
     style: "normal",
     variable: "--font-armies",
 });
+
+export const herrVon = localFont({
+    src: "./fonts/HerrVonMuellerhoffRegular.ttf",
+    weight: "400",
+    style: "normal",
+    variable: "--font-herrVon"
+})
+
+export const monsieur = localFont({
+    src: "./fonts/MonsieurLaDoulaiseRegular.ttf",
+    variable: "--font-monsieur"
+})
