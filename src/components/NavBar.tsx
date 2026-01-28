@@ -13,11 +13,11 @@ const NavBar: React.FC<NavBarProps> = ({ color = "transparent" }) => {
 
     const linksLeft = [
         {href: "/", label: "Home"},
-        {href: "../about", label: "About Me"}
-    ]
-
-    const linksRight = [
         {href: "../projects", label: "Work & Play"},
+    ]
+    
+    const linksRight = [
+        {href: "../about", label: "About Me"},
         {href: "../contact", label: "Reach Out"}
     ];
 
