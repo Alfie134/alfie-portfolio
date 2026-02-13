@@ -2,39 +2,32 @@ import {Barriecito, Fira_Code, Joan} from "next/font/google";
 import localFont from "next/font/local";
 import "./fonts";
 
-
+/* New Fonts */
 export const firaCode = Fira_Code({
     subsets: ["latin"],
     variable: "--font-fira",
 });
 
+export const molen = localFont({
+    src: "./fonts/MolenSurplus2.otf",
+    variable: "--font-molen"
+})
+
+export const frunchy = localFont({
+    src: "./fonts/Frunchy.ttf",
+    variable: "--font-frunchy"
+})
+
+export const hali = localFont({
+    src: "./fonts/Halimun.ttf",
+    variable: "--font-hali"
+})
+
+
+
+/*Older Fonts*/
 export const joan = Joan({
     subsets:["latin", "latin-ext"],
     weight: "400",
     variable: "--font-joan",
 });
-
-export const barriecito = Barriecito({
-    subsets: ["latin"],
-    weight: "400",
-    variable: "--font-barriecito"
-});
-
-export const armiesDisplay = localFont({
-    src: "./fonts/ArmiesDisplayRegular.ttf",
-    weight: "400",
-    style: "normal",
-    variable: "--font-armies",
-});
-
-export const herrVon = localFont({
-    src: "./fonts/HerrVonMuellerhoffRegular.ttf",
-    weight: "400",
-    style: "normal",
-    variable: "--font-herrVon"
-})
-
-export const monsieur = localFont({
-    src: "./fonts/MonsieurLaDoulaiseRegular.ttf",
-    variable: "--font-monsieur"
-})

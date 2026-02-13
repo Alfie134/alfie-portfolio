@@ -14,7 +14,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Right */}
-                <div className="col-span-12 md:col-start-10 md:col-span-2 font-armies-display">
+                <div className="col-span-12 md:col-start-10 md:col-span-2 font-molen">
                   <p className="text-8xl font-barriecito font-semibold leading-none">15jan</p>
                   <p className="text-4xl mt-0 leading-snug text-right">
                     what <br/> im <br/> working <br/> on

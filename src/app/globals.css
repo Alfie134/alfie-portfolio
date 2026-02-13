@@ -30,10 +30,23 @@ section{
     font-family: var(--font-joan), serif;
   }
 
+/*Main Text*/
   .font-fira-code{
     font-family: var(--font-fira), monospace;
   }
-  
+/*Flair Header Text*/
+  .font-molen{
+    font-family: var(--font-molen), ;
+  }
+/*Name Text 1*/
+.font-frunchy{
+  font-family: var(--font-frunchy), ;
+}
+/*Name Text 2 Last Name*/
+.font-Hali{
+  font-family: var(--font-hali);
+}
+
   .font-armies-display{
     font-family: var(--font-armies);
   }

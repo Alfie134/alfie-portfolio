@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import "./globals.css";
-import { armiesDisplay, barriecito, firaCode, herrVon, joan, monsieur} from "./fonts";
+import { firaCode, joan, molen, hali, frunchy} from "./fonts";
 
 export default function RootLayout({
   children,
@@ -10,7 +10,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${firaCode.variable} ${joan.variable} ${barriecito.variable} ${armiesDisplay.variable} ${herrVon.variable} ${monsieur.variable}`}>
+      <body className={`${firaCode.variable} ${molen.variable} ${frunchy.variable} ${hali.variable} ${joan.variable}`}>
         <NavBar></NavBar>
         <main>{children}</main>
       </body>
