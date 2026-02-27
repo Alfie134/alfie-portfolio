@@ -36,39 +36,18 @@ section{
   }
 /*Flair Header Text*/
   .font-molen{
-    font-family: var(--font-molen), ;
+    font-family: var(--font-molen) ;
   }
 /*Name Text 1*/
 .font-frunchy{
-  font-family: var(--font-frunchy), ;
+  font-family: var(--font-frunchy) ;
 }
 /*Name Text 2 Last Name*/
-.font-Hali{
+.font-hali{
   font-family: var(--font-hali);
 }
-
-  .font-armies-display{
-    font-family: var(--font-armies);
-  }
   
-  .font-kabel{
-    font-family: var(--font-kabel);
-  }
-
-  .font-herrVon{
-    font-family: var(--font-herrVan);
-  }
-
-  .font-monsieur {
-    font-family: var(--font-monsieur);
-  }
 
   /*_____________________________Front page Name_____________________________*/
   
-
-/*_________________________Front Page Date_________________________________*/
-  .font-barriecito{
-    font-family: var(--font-barri), serif;
-  }
-
 }

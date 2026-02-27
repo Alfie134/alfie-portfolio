@@ -1,54 +1,137 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 import ArchedPortrait from "@/components/ArchedPortrait";
+import { form } from "framer-motion/m";
 
 export default function HomePage() {
+  const [date, setDate] = useState("");
+
+  useEffect(() => {
+    const today = new Date();
+
+    const formatted = today.toLocaleDateString("en-GB", {
+      day: "2-digit",
+      month: "short",
+    });
+
+    setDate(formatted ? formatted.toLocaleLowerCase() : "");
+  }, []);
+
   return (
     <main>
-      <section id="hero" className="min-h-screen w-full bg-cover bg-no-repeat backdrop-blur-md" style={{backgroundImage: "url('/backgroundIMG.jpg')", backgroundPosition: "center 47%"}} >
-          <div className="mx-auto max-w-[1320px] px-7">
-            {/* Top row: left + right */}
-              <div className="grid grid-cols-12 items-start gap-x-[14px] gap-y-10 text-[var(--text-main)]">
-                {/* Left */}
-                <div className="col-span-12 md:col-start-2 md:col-end-7 text-left">
-                  <p className="text-8xl font-fira-code tracking-widest">ALBERTE</p>
-                  <p className="text-8xl font-monsieur">Øgendahl</p>
-                </div>
+    {/*Hero Section*/}
+      <section 
+        id="hero" 
+        className="relative min-h-screen w-full bg-cover bg-no-repeat overflow-hidden" 
+        style={{
+          backgroundImage: "url('/PortfolioResized.png')", 
+          backgroundPosition: "center 47%",
+          backgroundSize: "115%"
+        }} 
+      >
+        <div className="mx-auto max-w-[1320px] px-7">
+          {/* Top row: left + right */}
+            <div className="grid grid-cols-12 gap-x-[14px] gap-y-10 text-[var(--text-main)] pt-[12vh]">
+              {/* Left */}
+              <div className="col-span-12 md:col-start-2 md:col-end-7 text-left">
+                <p className="text-9xl font-frunchy tracking-widest">ALBERTE</p>
+                <p className="text-7xl font-hali">Øgendahl</p>
+              </div>
 
-                {/* Right */}
-                <div className="col-span-12 md:col-start-10 md:col-span-2 font-molen">
-                  <p className="text-8xl font-barriecito font-semibold leading-none">15jan</p>
-                  <p className="text-4xl mt-0 leading-snug text-right">
+              {/* Right */}
+              <div className="col-span-12 md:col-start-10 md:col-span-2 font-molen whitespace-nowrap">
+                <p className="text-7xl font-molen font-semibold leading-none">{date}</p>
+                <div>
+                  <p className="text-2xl leading-snug text-center font-fira-code">
                     what <br/> im <br/> working <br/> on
                   </p>
+
                 </div>
               </div>
+            </div>
 
-              {/* Lower text block */}
-              <div className="mt-16 text-[var(--text-main)]">
-                <div className=" text-center font-fira-code">
-                  <p className="tracking-widest text-[64px]">
-                    DEVELOPER
-                  </p>
-                  <p className="tracking-widest text-[64px] col-span-12 md:col-start-2 md:col-end-5">
-                    FRONTEND ENTHUSIAST
-                  </p>
+            {/* Lower text block */}
+            <div className="absolute bottom-[10vh] left-0 w-full text-[#fffddf] font-fira-code">
+              <div className="mx-auto max-w-[1320px] px-7">
+                <div className="grid grid-cols-12">
+                  <div className="col-span-12 md:col-start-2 md:col-end-10 inline-block">
+                    <p className="tracking-[0.2em] leading-tight text-xl sm:text-2xl md:text-3xl lg:text-4xl md:translate-x-[140px]">
+                      DEVELOPER
+                    </p>
+                    <p className="tracking-[0.2em] leading-tight text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+                      FRONTEND ENTHUSIAST
+                    </p>
+                  </div>
                 </div>
               </div>
+            </div>
 
-              <div className="my-picture">
-                <ArchedPortrait/>
-              </div>
-          </div>
+            <div className="my-picture">
+              <ArchedPortrait/>
+            </div>
+        </div>
         </section>
+    
+    {/*Work and projects section*/}
+      <section 
+        id="work" 
+        className="min-h-screen w-full scroll-mt-24" 
+        style={{backgroundColor: "#bb8951"}}
+      >
+        <div className="mx-auto max-w-[1320px] px-7 py-24">
+          <div className="grid grid-cols-12 gap-x-[14px] gap-y-10">
+            {/*Left Title Block*/}
+            <div className="col-span-12 md:col-span-3 ">
+              <h2 className="font-frunchy text-5xl leading-tight text-[#31080c] text-center font-bold"> 
+                My <br/>
+                Projects, <br/> 
+                And <br/>
+                Work
+              </h2>
+            </div>
 
-      <section id="work" className="min-h-screen w-full bg-cover bg-no-repeat scroll-mt-24" style={{backgroundColor: "#CCA986"}}>
-        <div className="main-text-work">
-          <h1> My Projects, And Work</h1>
+            {/*Cards Area*/}
+            <div className="col-span-12 md:col-span-9">
+              <div className="grid grid-cols-12 gap-x-[12px] gap-y-10">
+
+                {/*Top Row*/}
+                <div className="col-span-12 md:col-span-4">
+                  {/* <img src="/imgage.png"
+                  alt=""/>
+                  className="h-full w-full object-cover"*/}
+                  <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+                  <p className="mt-3 text-sm text-[#511b1d]">Your paragraph text</p>
+                </div>
+
+                <div className="col-span-12 md:col-span-8">
+                  <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+                  <p className="mt-3 text-sm text-[#511b1d]">Your paragraph text</p>
+                </div>
+
+                {/*Bottom Row*/}
+                <div className="col-span-12 md:col-span-4">
+                  <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+                  <p className="mt-3 text-sm text-[#511b1d]">Your paragraph text</p>
+                </div>
+
+                <div className="col-span-12 md:col-span-4">
+                  <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+                  <p className="mt-3 text-sm text-[#511b1d]">Your paragraph text</p>
+                </div>
+
+                <div className="col-span-12 md:col-span-4">
+                  <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+                  <p className="mt-3 text-sm text-[#511b1d]">Your paragraph text</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div className="project-card-small">
-          <p>Card paragraph text</p>
-        </div>
+        
         <div className="project-card-small">
           <p>Card paragraph text</p>
         </div>
@@ -63,7 +146,7 @@ export default function HomePage() {
         </div>
       </section>
 
-
+    {/* Free Time Section */}
       <section id="play" className="min-h-screen w-full bg-cover bg-no-repeat scroll-mt-24" style={{backgroundColor: "#511B1D"}}>
         <div className="main-text-play">
           <h1>Free Time Interests and Fun</h1>

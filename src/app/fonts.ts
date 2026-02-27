@@ -1,4 +1,4 @@
-import {Barriecito, Fira_Code, Joan} from "next/font/google";
+import {Fira_Code, Joan} from "next/font/google";
 import localFont from "next/font/local";
 import "./fonts";
 

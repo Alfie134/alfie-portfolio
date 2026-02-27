@@ -25,7 +25,7 @@ const NavBar: React.FC<NavBarProps> = ({ color = "transparent" }) => {
         const isActive = pathname === href || pathname.startsWith(href + '/');
         return `px-4 py-2 rounded-full transition-colors duration-300 ${
             isActive
-                ? 'text-[#750012]'
+                ? 'text-[#F6EC65]'
             : 'text-[var(--navbar-theme)] hover:bg-[#522323] hover:text-[#C2C5AA]'
         }`;  
     };
