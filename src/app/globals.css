@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 :root {
   --bg1: #4c010e; /*normal colour = #f5eee6*/
   --bg2: #b6cee8;
@@ -25,29 +26,26 @@ section{
   padding: 4rem 2rem;
 }
 
-@layer utilities {
-  .font-joan {
-    font-family: var(--font-joan), serif;
-  }
+@utility font-joan {
+  font-family: var(--font-joan), serif;
+}
 
 /*Main Text*/
-  .font-fira-code{
+@utility font-fira-code{
     font-family: var(--font-fira), monospace;
   }
 /*Flair Header Text*/
-  .font-molen{
+@utility font-molen{
     font-family: var(--font-molen) ;
   }
 /*Name Text 1*/
-.font-frunchy{
+@utility font-frunchy{
   font-family: var(--font-frunchy) ;
 }
 /*Name Text 2 Last Name*/
-.font-hali{
+@utility font-hali{
   font-family: var(--font-hali);
 }
   
 
   /*_____________________________Front page Name_____________________________*/
-  
-}
