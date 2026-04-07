@@ -1,12 +1,11 @@
 import NavBar from "../components/NavBar";
-import "./globals.css";
 import { firaCode, joan, molen, hali, frunchy} from "./fonts";
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  }: Readonly<{
+    children: React.ReactNode;
+  }>) {
 
   return (
     <html lang="en">

@@ -33,7 +33,7 @@ export default function HomePage() {
       >
         <div className="mx-auto max-w-[1320px] px-7">
           {/* Top row: left + right */}
-            <div className="grid grid-cols-12 gap-x-[14px] gap-y-10 text-[var(--text-main)] pt-[12vh]">
+            <div className="grid grid-cols-12 auto-rows-fr gap-x-[14px] gap-y-10 text-[var(--text-main)] pt-[12vh]">
               {/* Left */}
               <div className="col-span-12 md:col-start-2 md:col-end-7 text-left">
                 <p className="text-9xl font-frunchy tracking-widest">ALBERTE</p>
@@ -82,8 +82,9 @@ export default function HomePage() {
       >
         <div className="mx-auto max-w-[1320px] px-7 py-24">
           <div className="grid grid-cols-12 gap-x-[14px] gap-y-10">
+
             {/*Left Title Block*/}
-            <div className="col-span-12 md:col-span-3 ">
+            <div className="col-span-12 md:col-span-3 flex items-center justify-center">
               <h2 className="font-frunchy text-5xl leading-tight text-[#31080c] text-center font-bold"> 
                 My <br/>
                 Projects, <br/> 
@@ -92,57 +93,34 @@ export default function HomePage() {
               </h2>
             </div>
 
-            {/*Cards Area*/}
-            <div className="col-span-12 md:col-span-9">
-              <div className="grid grid-cols-12 gap-x-[12px] gap-y-10">
-
-                {/*Top Row*/}
-                <div className="col-span-12 md:col-span-4">
-                  {/* <img src="/imgage.png"
-                  alt=""/>
-                  className="h-full w-full object-cover"*/}
-                  <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                  <p className="mt-3 text-sm text-[#511b1d]">Your paragraph text</p>
-                </div>
-
-                <div className="col-span-12 md:col-span-8">
-                  <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                  <p className="mt-3 text-sm text-[#511b1d]">Your paragraph text</p>
-                </div>
-
-                {/*Bottom Row*/}
-                <div className="col-span-12 md:col-span-4">
-                  <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                  <p className="mt-3 text-sm text-[#511b1d]">Your paragraph text</p>
-                </div>
-
-                <div className="col-span-12 md:col-span-4">
-                  <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                  <p className="mt-3 text-sm text-[#511b1d]">Your paragraph text</p>
-                </div>
-
-                <div className="col-span-12 md:col-span-4">
-                  <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                  <p className="mt-3 text-sm text-[#511b1d]">Your paragraph text</p>
-                </div>
-
-              </div>
+            {/*Top Row*/}
+            <div className="col-span-12 md:col-span-4">
+              <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+              <p className="mt-3 text-sm text-[#511b1d]">1. Your paragraph text</p>
             </div>
 
+            <div className="col-span-12 md:col-span-8 ">
+              <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+              <p className="mt-3 text-sm text-[#511b1d] text-center">2. Your paragraph text</p>
+            </div>
+
+            {/*Bottom Row*/}
+            <div className="col-span-12 md:col-span-4">
+              <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+              <p className="mt-3 text-sm text-[#511b1d]">3. Your paragraph text</p>
+            </div>
+
+            <div className="col-span-12 md:col-span-4">
+              <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+              <p className="mt-3 text-sm text-[#511b1d]">4. Your paragraph text</p>
+            </div>
+
+            <div className="col-span-12 md:col-span-4">
+              <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+              <p className="mt-3 text-sm text-[#511b1d]">5. Your paragraph text</p>
+            </div>
+            
           </div>
-        </div>
-        
-        <div className="project-card-small">
-          <p>Card paragraph text</p>
-        </div>
-        <div className="project-card-small">
-          <p>Card paragraph text</p>
-        </div>
-        <div className="project-card-small">
-          <p>Card paragraph text</p>
-        </div>
-        <div className="project-card-large">
-          <p>Card paragraph text</p>
         </div>
       </section>
 
