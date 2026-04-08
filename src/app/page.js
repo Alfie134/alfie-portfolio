@@ -78,21 +78,21 @@ export default function HomePage() {
                 className="min-h-screen w-full scroll-mt-24" 
                 style={{backgroundColor: "#bb8951"}}
             >
-                <div className="mx-auto max-w-[1320px] px-7 py-24">
-                    <div className="grid grid-cols-12 gap-x-[14px] gap-y-10">
+            
+                <div className="flex gap-4">
+                    {/*Left Title Block*/}
+                    <div className="col-span-12 md:col-span-3 flex items-center justify-center">
+                        <h2 className="font-frunchy text-5xl leading-tight text-[#31080c] text-center font-bold"> 
+                            My <br/>
+                            Projects, <br/> 
+                            And <br/>
+                            Work
+                        </h2>
+                    </div>
 
-                        {/*Left Title Block*/}
-                        <div className="col-span-12 md:col-span-3 flex items-center justify-center">
-                            <h2 className="font-frunchy text-5xl leading-tight text-[#31080c] text-center font-bold"> 
-                                My <br/>
-                                Projects, <br/> 
-                                And <br/>
-                                Work
-                            </h2>
-                        </div>
-
-                        {/*Top Row*/}
-                        <div className="col-span-12 md:col-span-4">
+                    {/*Top Row*/}
+                    <div>
+                        <div className="flex gap-4">
                             <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
                             <p className="mt-3 text-sm text-[#511b1d]">1. Your paragraph text</p>
                         </div>
@@ -101,24 +101,24 @@ export default function HomePage() {
                             <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
                             <p className="mt-3 text-sm text-[#511b1d] text-center">2. Your paragraph text</p>
                         </div>
-
-                        {/*Bottom Row*/}
-                        <div className="col-span-12 md:col-span-4">
-                            <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                            <p className="mt-3 text-sm text-[#511b1d]">3. Your paragraph text</p>
-                        </div>
-
-                        <div className="col-span-12 md:col-span-4">
-                            <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                            <p className="mt-3 text-sm text-[#511b1d]">4. Your paragraph text</p>
-                        </div>
-
-                        <div className="col-span-12 md:col-span-4">
-                            <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                            <p className="mt-3 text-sm text-[#511b1d]">5. Your paragraph text</p>
-                        </div>
-                
                     </div>
+
+                    {/*Bottom Row*/}
+                    <div className="col-span-12 md:col-span-4">
+                        <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+                        <p className="mt-3 text-sm text-[#511b1d]">3. Your paragraph text</p>
+                    </div>
+
+                    <div className="col-span-12 md:col-span-4">
+                        <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+                        <p className="mt-3 text-sm text-[#511b1d]">4. Your paragraph text</p>
+                    </div>
+
+                    <div className="col-span-12 md:col-span-4">
+                        <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
+                        <p className="mt-3 text-sm text-[#511b1d]">5. Your paragraph text</p>
+                    </div>
+
                 </div>
             </section>
 
