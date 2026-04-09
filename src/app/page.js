@@ -84,19 +84,19 @@ export default function HomePage() {
                         {/* Top row */}
                         <div className="work-top-row">
                             <div className="work-title">
-                                <h2 className="font-frunchy text-5xl leading-tight text-[#31080c] text-center font-bold"> 
+                                <h2 className="font-frunchy text-8xl leading-tight text-[#31080c] text-center font-bold"> 
                                     My <br/> Projects, <br/> And <br/> Work
                                 </h2>
                             </div>
                             <WorkCard label="1. Your paragraph text" images={["/placeholder.jpg"]} />
-                            <WorkCard label="2. Your paragraph text" images={["/placeholder.jpg"]} wide={true} />
+                            <WorkCard label="Testimonial handler for a danish school made during my internship in Janurary-March 2026. Full-stack project made with Asp.Net Core and React.js" images={["/testimonial1.png"]} wide={true} />
                         </div>
 
                         {/* Bottom row */}
                         <div className="work-bottom-row">
                             <div className="work-spacer" />
-                            <WorkCard label="3. Your paragraph text" images={["/placeholder.jpg"]} />
-                            <WorkCard label="4. Your paragraph text" images={["/placeholder.jpg"]} />
+                            <WorkCard label="3. Your paragraph text" images={["./Placeholder.jpg"]} />
+                            <WorkCard label="4. Your paragraph text" images={["/PortfolioResized.png"]} />
                             <WorkCard label="5. Your paragraph text" images={["/placeholder.jpg"]} />
                         </div>
 

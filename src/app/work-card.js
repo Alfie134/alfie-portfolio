@@ -15,7 +15,7 @@ export default function WorkCard({ images = [], label, wide = false}) {
 
     return(
         <div 
-            className={`card-wrapper ${wide ? "card=wrapper-wide" : ""}`}
+            className={`card-wrapper ${wide ? "card-wrapper-wide" : ""}`}
             onMouseEnter={() => setFlipped(true)}
             onMouseLeave={() => { setFlipped(false); setCureentImage(0);}}
         >
@@ -28,10 +28,9 @@ export default function WorkCard({ images = [], label, wide = false}) {
                 {/* Back */}
                 <div className="card-back">
                     {images.length > 0 ? (
-                        <image
-                            src={images[currentImage]}
-                            alt={`project slide ${currentImage + 1}`}
+                        <div
                             className="card-slideshow-img"
+                            style={{backgroundImage: `url(${images[currentImage]})`, backgroundSize: "cover", backgroundPosition: "center"}}
                             />
                     ) : (
                         <p>No images yet</p>
