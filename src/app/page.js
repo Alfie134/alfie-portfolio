@@ -1,5 +1,8 @@
 "use client";
+
 import "./globals.css";
+import "./work-section.css"
+import WorkCard from "./work-card"
 
 import { useEffect, useState } from "react";
 import ArchedPortrait from "@/components/ArchedPortrait";
@@ -17,6 +20,7 @@ export default function HomePage() {
 
     setDate(formatted ? formatted.toLocaleLowerCase() : "");
     }, []);
+
 
     return (
         <main>
@@ -73,52 +77,30 @@ export default function HomePage() {
             </section>
     
             {/*Work and projects section*/}
-            <section 
-                id="work" 
-                className="min-h-screen w-full scroll-mt-24" 
-                style={{backgroundColor: "#bb8951"}}
-            >
-            
-                <div className="flex gap-4">
-                    {/*Left Title Block*/}
-                    <div className="col-span-12 md:col-span-3 flex items-center justify-center">
-                        <h2 className="font-frunchy text-5xl leading-tight text-[#31080c] text-center font-bold"> 
-                            My <br/>
-                            Projects, <br/> 
-                            And <br/>
-                            Work
-                        </h2>
-                    </div>
+            <section id="work" className="work-section">
+                <div className="work-container">
+                    <div className="work-grid">
 
-                    {/*Top Row*/}
-                    <div>
-                        <div className="flex gap-4">
-                            <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                            <p className="mt-3 text-sm text-[#511b1d]">1. Your paragraph text</p>
+                        {/* Top row */}
+                        <div className="work-top-row">
+                            <div className="work-title">
+                                <h2 className="font-frunchy text-5xl leading-tight text-[#31080c] text-center font-bold"> 
+                                    My <br/> Projects, <br/> And <br/> Work
+                                </h2>
+                            </div>
+                            <WorkCard label="1. Your paragraph text" images={["/placeholder.jpg"]} />
+                            <WorkCard label="2. Your paragraph text" images={["/placeholder.jpg"]} wide={true} />
                         </div>
 
-                        <div className="col-span-12 md:col-span-8 ">
-                            <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                            <p className="mt-3 text-sm text-[#511b1d] text-center">2. Your paragraph text</p>
+                        {/* Bottom row */}
+                        <div className="work-bottom-row">
+                            <div className="work-spacer" />
+                            <WorkCard label="3. Your paragraph text" images={["/placeholder.jpg"]} />
+                            <WorkCard label="4. Your paragraph text" images={["/placeholder.jpg"]} />
+                            <WorkCard label="5. Your paragraph text" images={["/placeholder.jpg"]} />
                         </div>
-                    </div>
 
-                    {/*Bottom Row*/}
-                    <div className="col-span-12 md:col-span-4">
-                        <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                        <p className="mt-3 text-sm text-[#511b1d]">3. Your paragraph text</p>
                     </div>
-
-                    <div className="col-span-12 md:col-span-4">
-                        <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                        <p className="mt-3 text-sm text-[#511b1d]">4. Your paragraph text</p>
-                    </div>
-
-                    <div className="col-span-12 md:col-span-4">
-                        <div className="aspect-square rounded-3xl bg-black/10 shadow-sm overflow-hidden" />
-                        <p className="mt-3 text-sm text-[#511b1d]">5. Your paragraph text</p>
-                    </div>
-
                 </div>
             </section>
 
