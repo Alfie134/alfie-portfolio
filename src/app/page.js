@@ -6,6 +6,7 @@ import WorkCard from "./work-card"
 
 import { useEffect, useState } from "react";
 import ArchedPortrait from "@/components/ArchedPortrait";
+import Link from "next/link";
 
 export default function HomePage() {
     const [date, setDate] = useState("");
@@ -88,8 +89,15 @@ export default function HomePage() {
                                     My <br/> Projects, <br/> And <br/> Work
                                 </h2>
                             </div>
+    
                             <WorkCard label="1. Your paragraph text" images={["/placeholder.jpg"]} />
-                            <WorkCard label="Testimonial handler for a danish school made during my internship in Janurary-March 2026. Full-stack project made with Asp.Net Core and React.js" images={["/testimonial1.png"]} wide={true} />
+                            
+                                <WorkCard 
+                                    label="Testimonial handler for a danish school made during my internship in Janurary-March 2026. Full-stack project made with Asp.Net Core and React.js" 
+                                    images={["/testimonial1.png"]} 
+                                    wide={true}
+                                    href="projects/testimonialhandler"
+                                />
                         </div>
 
                         {/* Bottom row */}

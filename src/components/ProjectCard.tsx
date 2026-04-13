@@ -18,7 +18,7 @@ export default function ProjectCard ({title, description, image, link}: ProjectC
                     alt={title}
                     width={600}
                     height={350}
-                    className="obeject-cover rounded-xl">
+                    className="object-cover rounded-xl">
                 </Image>
                 <div>
                     <h3 className="text-[#E5DED1]">{title}</h3>
