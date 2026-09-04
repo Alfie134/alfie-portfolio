@@ -31,10 +31,6 @@ export default function HorseEventPage () {
                     Thereafter the equestrians can register to attend these events. 
                 </p>
             </div>
-
-
-
-
-                </section>
+        </section>
     )
 }
