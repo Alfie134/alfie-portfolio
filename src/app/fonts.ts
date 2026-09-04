@@ -1,33 +1,21 @@
-import {Fira_Code, Joan} from "next/font/google";
+import {Cinzel_Decorative} from "next/font/google";
 import localFont from "next/font/local";
 import "./fonts";
 
-/* New Fonts */
-export const firaCode = Fira_Code({
+
+
+export const CinzelDeco = Cinzel_Decorative({
+    weight: ['400', '700', '900'],
     subsets: ["latin"],
-    variable: "--font-fira",
+    variable: "--font-CinzelDeco"
 });
+
 
 export const molen = localFont({
     src: "./fonts/MolenSurplus2.otf",
     variable: "--font-molen"
 })
 
-export const frunchy = localFont({
-    src: "./fonts/Frunchy.ttf",
-    variable: "--font-frunchy"
-})
-
-export const hali = localFont({
-    src: "./fonts/Halimun.ttf",
-    variable: "--font-hali"
-})
 
 
 
-/*Older Fonts*/
-export const joan = Joan({
-    subsets:["latin", "latin-ext"],
-    weight: "400",
-    variable: "--font-joan",
-});

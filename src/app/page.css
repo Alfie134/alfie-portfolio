@@ -1,5 +1,12 @@
 .hero-page{
+    background: var(--bg1);
     min-height: 100vh;
+    width: 100%;
+}   
+
+.heroImage{
+    min-height: 110vh;
+    min-width: 50ch;
     width: 100%;
 
     background:
@@ -10,8 +17,13 @@
     background-repeat: no-repeat;
 
     position: relative;
-}   
 
-text-left{
-    color: #fff ;
+    border-radius: 25px
+}
+
+.text-left p{
+    color: var(--header);
+    font-size: 2.5rem;
+    font-family: var(--font-CinzelDeco);
+
 }

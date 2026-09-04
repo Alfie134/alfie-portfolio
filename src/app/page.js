@@ -24,40 +24,42 @@ export default function HomePage() {
 
     return (
         <main>
-            <div className="backgroundImage"></div>
             {/*Hero Section*/}
             <section id="hero" className="hero-page">
-                <div className="mx-auto max-w-[1320px] px-7">
-                    {/* Top row: left + right */}
-                    <div>
-                        {/* Left */}
-                        <div className="text-left">
-                            <p>Alberte</p>
-                            <p>Øgendahl</p>
-                        </div>
-
-                        {/* Right */}
-                        <div className=" font-molen whitespace-nowrap">
-                            <p className="text-7xl font-molen font-semibold leading-none">{date}</p>
-                            <div>
-                                <p className="text-2xl leading-snug text-center font-fira-code">
-                                    what <br/> im <br/> working <br/> on
-                                </p>
+                <div className="heroImage">
+                
+                    <div className="mx-auto max-w-[1320px] px-7">
+                        {/* Top row: left + right */}
+                        <div>
+                            {/* Left */}
+                            <div className="text-left">
+                                <p>Alberte</p>
+                                <p>Øgendahl</p>
                             </div>
-                        </div>
-                    </div>
 
-                    {/* Lower text block */}
-                    <div className="absolute bottom-[10vh] left-0 w-full text-[#fffddf] font-fira-code">
-                        <div className="mx-auto max-w-[1320px] px-7">
-                            <div className="grid grid-cols-12">
-                                <div className="col-span-12 md:col-start-2 md:col-end-10 inline-block">
+                            {/* Right */}
+                            <div className=" font-molen whitespace-nowrap">
+                                <p className="text-7xl font-molen font-semibold leading-none">{date}</p>
+                                <div>
+                                    <p className="text-2xl leading-snug text-center font-fira-code">
+                                        what <br/> im <br/> working <br/> on
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="my-picture">
+                        {/* Lower text block */}
+                        <div className="absolute bottom-[10vh] left-0 w-full text-[#fffddf] font-fira-code">
+                            <div className="mx-auto max-w-[1320px] px-7">
+                                <div className="grid grid-cols-12">
+                                    <div className="col-span-12 md:col-start-2 md:col-end-10 inline-block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="my-picture">
+                        </div>
                     </div>
                 </div>
             </section>
